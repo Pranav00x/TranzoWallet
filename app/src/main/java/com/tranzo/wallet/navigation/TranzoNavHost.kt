@@ -61,16 +61,13 @@ fun TranzoNavHost() {
             )
         }
 
-        composable(Routes.CREATE_WALLET) {
-            CreateWalletScreen(
-                onWalletCreated = { navController.navigate(Routes.BACKUP_SEED) },
-                onBack = { navController.popBackStack() }
-            )
-        }
-
-        composable(Routes.IMPORT_WALLET) {
-            ImportWalletScreen(
-                onWalletImported = {
+        composable(
+            route = "${Routes.BACKUP_SEED}?mnemonic={mnemonic}"
+        ) { backStackEntry ->
+            val mnemonic = backStackEntry.arguments?.getString("mnemonic") ?: ""
+            BackupSeedScreen(
+                mnemonic = mnemonic,
+                onBackupComplete = {
                     navController.navigate(Routes.PIN_SETUP) {
                         popUpTo(Routes.INTRO) { inclusive = true }
                     }
@@ -79,9 +76,18 @@ fun TranzoNavHost() {
             )
         }
 
-        composable(Routes.BACKUP_SEED) {
-            BackupSeedScreen(
-                onBackupComplete = {
+        composable(Routes.CREATE_WALLET) {
+            CreateWalletScreen(
+                onWalletCreated = { _, mnemonic ->
+                    navController.navigate("${Routes.BACKUP_SEED}?mnemonic=$mnemonic")
+                },
+                onBack = { navController.popBackStack() }
+            )
+        }
+
+        composable(Routes.IMPORT_WALLET) {
+            ImportWalletScreen(
+                onWalletImported = {
                     navController.navigate(Routes.PIN_SETUP) {
                         popUpTo(Routes.INTRO) { inclusive = true }
                     }
