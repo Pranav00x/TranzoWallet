@@ -32,7 +32,7 @@ configurations.all {
 }
 
 dependencies {
-    implementation(libs.web3j.core)
+    api(libs.web3j.core)
     implementation(libs.bitcoinj.core)
     implementation(libs.coroutines.core)
 
