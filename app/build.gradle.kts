@@ -57,11 +57,15 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
             excludes += "META-INF/DISCLAIMER"
             excludes += "META-INF/versions/9/OSGI-INF/MANIFEST.MF"
+            // Pick first when both bcprov variants bundle the same resource files
+            pickFirsts += "org/bouncycastle/**"
         }
     }
 
     configurations.all {
+        // Exclude old BouncyCastle variants - keep only bcprov-jdk18on
         exclude(group = "org.bouncycastle", module = "bcprov-jdk15on")
+        exclude(group = "org.bouncycastle", module = "bcprov-jdk15to18")
     }
 }
 
