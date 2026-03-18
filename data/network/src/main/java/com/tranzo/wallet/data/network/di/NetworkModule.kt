@@ -19,6 +19,10 @@ import javax.inject.Singleton
 @Retention(AnnotationRetention.BINARY)
 annotation class CoinGeckoRetrofit
 
+@Qualifier
+@Retention(AnnotationRetention.BINARY)
+annotation class ExplorerRetrofit
+
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
@@ -55,13 +59,24 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideCoinGeckoApi(@CoinGeckoRetrofit retrofit: Retrofit): CoinGeckoApi {
-        return retrofit.create(CoinGeckoApi::class.java)
+    @ExplorerRetrofit
+    fun provideExplorerRetrofit(okHttpClient: OkHttpClient, gson: Gson): Retrofit {
+        return Retrofit.Builder()
+            .baseUrl("https://api.etherscan.io/")
+            .client(okHttpClient)
+            .addConverterFactory(GsonConverterFactory.create(gson))
+            .build()
     }
 
     @Provides
     @Singleton
-    fun provideBlockchainService(okHttpClient: OkHttpClient): BlockchainService {
-        return BlockchainService(okHttpClient)
+    fun provideExplorerApi(@ExplorerRetrofit retrofit: Retrofit): com.tranzo.wallet.data.network.api.ExplorerApi {
+        return retrofit.create(com.tranzo.wallet.data.network.api.ExplorerApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideCoinGeckoApi(@CoinGeckoRetrofit retrofit: Retrofit): CoinGeckoApi {
+        return retrofit.create(CoinGeckoApi::class.java)
     }
 }
