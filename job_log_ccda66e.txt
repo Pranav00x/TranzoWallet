@@ -1,0 +1,426 @@
+Build & Test	Set up job	n++2026-03-18T06:47:56.9020578Z Current runner version: '2.332.0'
+Build & Test	Set up job	2026-03-18T06:47:56.9046695Z ##[group]Runner Image Provisioner
+Build & Test	Set up job	2026-03-18T06:47:56.9047665Z Hosted Compute Agent
+Build & Test	Set up job	2026-03-18T06:47:56.9048278Z Version: 20260213.493
+Build & Test	Set up job	2026-03-18T06:47:56.9048896Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Build & Test	Set up job	2026-03-18T06:47:56.9049706Z Build Date: 2026-02-13T00:28:41Z
+Build & Test	Set up job	2026-03-18T06:47:56.9050344Z Worker ID: {80c14d06-b5cb-4c77-a95b-e519c88e166f}
+Build & Test	Set up job	2026-03-18T06:47:56.9051022Z Azure Region: westus3
+Build & Test	Set up job	2026-03-18T06:47:56.9051528Z ##[endgroup]
+Build & Test	Set up job	2026-03-18T06:47:56.9053087Z ##[group]Operating System
+Build & Test	Set up job	2026-03-18T06:47:56.9053674Z Ubuntu
+Build & Test	Set up job	2026-03-18T06:47:56.9054148Z 24.04.3
+Build & Test	Set up job	2026-03-18T06:47:56.9054683Z LTS
+Build & Test	Set up job	2026-03-18T06:47:56.9055159Z ##[endgroup]
+Build & Test	Set up job	2026-03-18T06:47:56.9055637Z ##[group]Runner Image
+Build & Test	Set up job	2026-03-18T06:47:56.9056520Z Image: ubuntu-24.04
+Build & Test	Set up job	2026-03-18T06:47:56.9057236Z Version: 20260309.50.1
+Build & Test	Set up job	2026-03-18T06:47:56.9058209Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260309.50/images/ubuntu/Ubuntu2404-Readme.md
+Build & Test	Set up job	2026-03-18T06:47:56.9059928Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260309.50
+Build & Test	Set up job	2026-03-18T06:47:56.9060823Z ##[endgroup]
+Build & Test	Set up job	2026-03-18T06:47:56.9062053Z ##[group]GITHUB_TOKEN Permissions
+Build & Test	Set up job	2026-03-18T06:47:56.9063896Z Contents: read
+Build & Test	Set up job	2026-03-18T06:47:56.9064517Z Metadata: read
+Build & Test	Set up job	2026-03-18T06:47:56.9065075Z Packages: read
+Build & Test	Set up job	2026-03-18T06:47:56.9065549Z ##[endgroup]
+Build & Test	Set up job	2026-03-18T06:47:56.9068480Z Secret source: Actions
+Build & Test	Set up job	2026-03-18T06:47:56.9069227Z Prepare workflow directory
+Build & Test	Set up job	2026-03-18T06:47:56.9488942Z Prepare all required actions
+Build & Test	Set up job	2026-03-18T06:47:56.9527669Z Getting action download info
+Build & Test	Set up job	2026-03-18T06:47:57.3920339Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Build & Test	Set up job	2026-03-18T06:47:57.5379082Z Download action repository 'actions/setup-java@v4' (SHA:c1e323688fd81a25caa38c78aa6df2d33d3e20d9)
+Build & Test	Set up job	2026-03-18T06:47:58.5540313Z Download action repository 'gradle/actions@v4' (SHA:ed408507eac070d1f99cc633dbcf757c94c7933a)
+Build & Test	Set up job	2026-03-18T06:48:00.1226976Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+Build & Test	Set up job	2026-03-18T06:48:00.3752447Z Complete job name: Build & Test
+Build & Test	Checkout repository	n++2026-03-18T06:48:00.4465214Z ##[group]Run actions/checkout@v4
+Build & Test	Checkout repository	2026-03-18T06:48:00.4465914Z with:
+Build & Test	Checkout repository	2026-03-18T06:48:00.4466448Z   repository: Pranav00x/TranzoWallet
+Build & Test	Checkout repository	2026-03-18T06:48:00.4467080Z   token: ***
+Build & Test	Checkout repository	2026-03-18T06:48:00.4467327Z   ssh-strict: true
+Build & Test	Checkout repository	2026-03-18T06:48:00.4467567Z   ssh-user: git
+Build & Test	Checkout repository	2026-03-18T06:48:00.4467833Z   persist-credentials: true
+Build & Test	Checkout repository	2026-03-18T06:48:00.4468103Z   clean: true
+Build & Test	Checkout repository	2026-03-18T06:48:00.4468355Z   sparse-checkout-cone-mode: true
+Build & Test	Checkout repository	2026-03-18T06:48:00.4468645Z   fetch-depth: 1
+Build & Test	Checkout repository	2026-03-18T06:48:00.4468878Z   fetch-tags: false
+Build & Test	Checkout repository	2026-03-18T06:48:00.4469119Z   show-progress: true
+Build & Test	Checkout repository	2026-03-18T06:48:00.4469396Z   lfs: false
+Build & Test	Checkout repository	2026-03-18T06:48:00.4469619Z   submodules: false
+Build & Test	Checkout repository	2026-03-18T06:48:00.4469862Z   set-safe-directory: true
+Build & Test	Checkout repository	2026-03-18T06:48:00.4470392Z env:
+Build & Test	Checkout repository	2026-03-18T06:48:00.4470624Z   JAVA_VERSION: 17
+Build & Test	Checkout repository	2026-03-18T06:48:00.4470885Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Checkout repository	2026-03-18T06:48:00.4471180Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:00.5601324Z Syncing repository: Pranav00x/TranzoWallet
+Build & Test	Checkout repository	2026-03-18T06:48:00.5602862Z ##[group]Getting Git version info
+Build & Test	Checkout repository	2026-03-18T06:48:00.5603626Z Working directory is '/home/runner/work/TranzoWallet/TranzoWallet'
+Build & Test	Checkout repository	2026-03-18T06:48:00.5604333Z [command]/usr/bin/git version
+Build & Test	Checkout repository	2026-03-18T06:48:00.5671256Z git version 2.53.0
+Build & Test	Checkout repository	2026-03-18T06:48:00.5702486Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:00.5721528Z Temporarily overriding HOME='/home/runner/work/_temp/273abbca-2d6e-4e29-a2c6-a84636d8616b' before making global git config changes
+Build & Test	Checkout repository	2026-03-18T06:48:00.5723194Z Adding repository directory to the temporary git global config as a safe directory
+Build & Test	Checkout repository	2026-03-18T06:48:00.5729494Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/TranzoWallet/TranzoWallet
+Build & Test	Checkout repository	2026-03-18T06:48:00.5785151Z Deleting the contents of '/home/runner/work/TranzoWallet/TranzoWallet'
+Build & Test	Checkout repository	2026-03-18T06:48:00.5790290Z ##[group]Initializing the repository
+Build & Test	Checkout repository	2026-03-18T06:48:00.5796357Z [command]/usr/bin/git init /home/runner/work/TranzoWallet/TranzoWallet
+Build & Test	Checkout repository	2026-03-18T06:48:00.5890459Z hint: Using 'master' as the name for the initial branch. This default branch name
+Build & Test	Checkout repository	2026-03-18T06:48:00.5891580Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Build & Test	Checkout repository	2026-03-18T06:48:00.5892211Z hint: to use in all of your new repositories, which will suppress this warning,
+Build & Test	Checkout repository	2026-03-18T06:48:00.5893080Z hint: call:
+Build & Test	Checkout repository	2026-03-18T06:48:00.5893545Z hint:
+Build & Test	Checkout repository	2026-03-18T06:48:00.5894108Z hint: 	git config --global init.defaultBranch <name>
+Build & Test	Checkout repository	2026-03-18T06:48:00.5894537Z hint:
+Build & Test	Checkout repository	2026-03-18T06:48:00.5895113Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Build & Test	Checkout repository	2026-03-18T06:48:00.5896476Z hint: 'development'. The just-created branch can be renamed via this command:
+Build & Test	Checkout repository	2026-03-18T06:48:00.5897418Z hint:
+Build & Test	Checkout repository	2026-03-18T06:48:00.5897915Z hint: 	git branch -m <name>
+Build & Test	Checkout repository	2026-03-18T06:48:00.5898432Z hint:
+Build & Test	Checkout repository	2026-03-18T06:48:00.5899103Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Build & Test	Checkout repository	2026-03-18T06:48:00.5900505Z Initialized empty Git repository in /home/runner/work/TranzoWallet/TranzoWallet/.git/
+Build & Test	Checkout repository	2026-03-18T06:48:00.5909423Z [command]/usr/bin/git remote add origin https://github.com/Pranav00x/TranzoWallet
+Build & Test	Checkout repository	2026-03-18T06:48:00.5948537Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:00.5949330Z ##[group]Disabling automatic garbage collection
+Build & Test	Checkout repository	2026-03-18T06:48:00.5954581Z [command]/usr/bin/git config --local gc.auto 0
+Build & Test	Checkout repository	2026-03-18T06:48:00.5985772Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:00.5986856Z ##[group]Setting up auth
+Build & Test	Checkout repository	2026-03-18T06:48:00.5995718Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build & Test	Checkout repository	2026-03-18T06:48:00.6034739Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build & Test	Checkout repository	2026-03-18T06:48:00.6377639Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build & Test	Checkout repository	2026-03-18T06:48:00.6410807Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build & Test	Checkout repository	2026-03-18T06:48:00.6664045Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build & Test	Checkout repository	2026-03-18T06:48:00.6703858Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build & Test	Checkout repository	2026-03-18T06:48:00.6974454Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build & Test	Checkout repository	2026-03-18T06:48:00.7015044Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:00.7015982Z ##[group]Fetching the repository
+Build & Test	Checkout repository	2026-03-18T06:48:00.7024668Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +ccda66e1fb491d9c6b2a294b8a3cfb002de9bd9e:refs/remotes/origin/main
+Build & Test	Checkout repository	2026-03-18T06:48:01.2642471Z From https://github.com/Pranav00x/TranzoWallet
+Build & Test	Checkout repository	2026-03-18T06:48:01.2643530Z  * [new ref]         ccda66e1fb491d9c6b2a294b8a3cfb002de9bd9e -> origin/main
+Build & Test	Checkout repository	2026-03-18T06:48:01.2677691Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:01.2678453Z ##[group]Determining the checkout info
+Build & Test	Checkout repository	2026-03-18T06:48:01.2680049Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:01.2685569Z [command]/usr/bin/git sparse-checkout disable
+Build & Test	Checkout repository	2026-03-18T06:48:01.2729096Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Build & Test	Checkout repository	2026-03-18T06:48:01.2757519Z ##[group]Checking out the ref
+Build & Test	Checkout repository	2026-03-18T06:48:01.2762301Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Build & Test	Checkout repository	2026-03-18T06:48:01.2970815Z Switched to a new branch 'main'
+Build & Test	Checkout repository	2026-03-18T06:48:01.2971898Z branch 'main' set up to track 'origin/main'.
+Build & Test	Checkout repository	2026-03-18T06:48:01.2980487Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:01.3022273Z [command]/usr/bin/git log -1 --format=%H
+Build & Test	Checkout repository	2026-03-18T06:48:01.3047884Z ccda66e1fb491d9c6b2a294b8a3cfb002de9bd9e
+Build & Test	Set up JDK 17	n++2026-03-18T06:48:01.3323404Z ##[group]Run actions/setup-java@v4
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3323792Z with:
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3324209Z   java-version: 17
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3324454Z   distribution: temurin
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3324708Z   java-package: jdk
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3324945Z   check-latest: false
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3325189Z   server-id: github
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3325422Z   server-username: GITHUB_ACTOR
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3325706Z   server-password: GITHUB_TOKEN
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3325975Z   overwrite-settings: true
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3326543Z   job-status: success
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3326928Z   token: ***
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3327144Z env:
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3327354Z   JAVA_VERSION: 17
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3327585Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.3327845Z ##[endgroup]
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5421087Z ##[group]Installed distributions
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5482167Z Resolved Java 17.0.18+8 from tool-cache
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5483190Z Setting Java 17.0.18+8 as the default
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5497003Z Creating toolchains.xml for JDK version 17 from temurin
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5580344Z Writing to /home/runner/.m2/toolchains.xml
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5580967Z 
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5581344Z Java configuration:
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5582234Z   Distribution: temurin
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5582777Z   Version: 17.0.18+8
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5583984Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5584602Z 
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5585328Z ##[endgroup]
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5602557Z Creating settings.xml with server-id: github
+Build & Test	Set up JDK 17	2026-03-18T06:48:01.5612636Z Writing to /home/runner/.m2/settings.xml
+Build & Test	Setup Gradle	n++2026-03-18T06:48:01.5854713Z ##[group]Run gradle/actions/setup-gradle@v4
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5855128Z with:
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5855359Z   cache-read-only: false
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5855620Z   cache-disabled: false
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5855878Z   cache-write-only: false
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5856155Z   cache-overwrite-existing: false
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5856610Z   cache-cleanup: on-success
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5856931Z   gradle-home-cache-includes: caches
+Build & Test	Setup Gradle	notifications
+Build & Test	Setup Gradle	
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5857277Z   add-job-summary: always
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5857570Z   add-job-summary-as-pr-comment: never
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5857884Z   dependency-graph: disabled
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5858220Z   dependency-graph-report-dir: dependency-graph-reports
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5858607Z   dependency-graph-continue-on-failure: true
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5858931Z   build-scan-publish: false
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5859206Z   validate-wrappers: true
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5859472Z   allow-snapshot-wrappers: false
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5859774Z   gradle-home-cache-strict-match: false
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5860140Z   workflow-job-context: null
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5860582Z   github-token: ***
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5860806Z env:
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5861016Z   JAVA_VERSION: 17
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5861251Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5861622Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5862123Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Setup Gradle	2026-03-18T06:48:01.5862538Z ##[endgroup]
+Build & Test	Setup Gradle	2026-03-18T06:48:02.0420298Z Merged default JDK locations into /home/runner/.m2/toolchains.xml
+Build & Test	Setup Gradle	2026-03-18T06:48:02.0422996Z Preparing cache for cleanup.
+Build & Test	Setup Gradle	2026-03-18T06:48:02.0429110Z ##[group]Restore Gradle state from cache
+Build & Test	Setup Gradle	2026-03-18T06:48:02.3232456Z Cache hit for restore-key: gradle-home-v1|Linux-X64|build[4757b9a07e36f0d7bcbca81beedd816f]-3a7f4da390b220bf591c90963d02f868f08516d5
+Build & Test	Setup Gradle	2026-03-18T06:48:03.5562060Z Received 1822133 of 6016437 (30.3%), 1.7 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:03.6752759Z Received 6016437 of 6016437 (100.0%), 5.1 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:03.6755159Z Cache Size: ~6 MB (6016437 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:03.6790667Z [command]/usr/bin/tar -xf /home/runner/work/_temp/e46975fd-e3d3-4448-8f05-0f616a4a5f74/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:03.8731645Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:03.8750589Z Restored cache entry with key gradle-home-v1|Linux-X64|build[4757b9a07e36f0d7bcbca81beedd816f]-ccda66e1fb491d9c6b2a294b8a3cfb002de9bd9e to /home/runner/.gradle/caches,/home/runner/.gradle/notifications,/home/runner/.gradle/.setup-gradle in 1830ms
+Build & Test	Setup Gradle	2026-03-18T06:48:04.0952509Z Cache hit for: gradle-generated-gradle-jars-v1-26cfecc158c44513d188405a5d2d0d9c
+Build & Test	Setup Gradle	2026-03-18T06:48:04.0956815Z Cache hit for: gradle-transforms-v1-d5b77c5723bf6c6228af6de63586f367
+Build & Test	Setup Gradle	2026-03-18T06:48:04.1016625Z Cache hit for: gradle-kotlin-dsl-v1-d39e68948c61b69a053111b9b299a590
+Build & Test	Setup Gradle	2026-03-18T06:48:04.1047359Z Cache hit for: gradle-wrapper-zips-v1-df6ecc383658ce44d9cbac4d1bfd12bf
+Build & Test	Setup Gradle	2026-03-18T06:48:04.1087177Z Cache hit for: gradle-groovy-dsl-v1-db4102aba42c9df7a23ea2b0e16ccf26
+Build & Test	Setup Gradle	2026-03-18T06:48:04.1097262Z Cache hit for: gradle-instrumented-jars-v1-26ce38ab989615990dc2d3189948bd90
+Build & Test	Setup Gradle	2026-03-18T06:48:04.1142068Z Cache hit for: gradle-dependencies-v1-162fba13e4d6aa5aefb8ad4a920ac24d
+Build & Test	Setup Gradle	2026-03-18T06:48:04.7055651Z Received 122599 of 122599 (100.0%), 0.3 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:04.7057436Z Cache Size: ~0 MB (122599 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:04.7104715Z [command]/usr/bin/tar -xf /home/runner/work/_temp/4d2214e5-ac5a-4b9e-9625-fec5fd5a5d57/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:04.7251179Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:04.7253319Z Restored cache entry with key gradle-instrumented-jars-v1-26ce38ab989615990dc2d3189948bd90 to /home/runner/.gradle/caches/jars-*/*/ in 849ms
+Build & Test	Setup Gradle	2026-03-18T06:48:04.7509962Z Received 197011 of 197011 (100.0%), 0.5 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:04.7510675Z Cache Size: ~0 MB (197011 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:04.7530244Z [command]/usr/bin/tar -xf /home/runner/work/_temp/eb5e240a-60ee-464f-9bb2-66ecbeba8420/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:04.7801755Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:04.7803938Z Restored cache entry with key gradle-groovy-dsl-v1-db4102aba42c9df7a23ea2b0e16ccf26 to /home/runner/.gradle/caches/*/groovy-dsl/*/ in 903ms
+Build & Test	Setup Gradle	2026-03-18T06:48:04.8048041Z Received 533614 of 533614 (100.0%), 1.2 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:04.8048873Z Cache Size: ~1 MB (533614 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:04.8076942Z [command]/usr/bin/tar -xf /home/runner/work/_temp/779b9d24-3cca-4773-87c5-5a23ec9ffdaa/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:05.0369517Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:05.0374284Z Restored cache entry with key gradle-kotlin-dsl-v1-d39e68948c61b69a053111b9b299a590 to /home/runner/.gradle/caches/*/kotlin-dsl/accessors/*/,/home/runner/.gradle/caches/*/kotlin-dsl/scripts/*/ in 1160ms
+Build & Test	Setup Gradle	2026-03-18T06:48:05.3258831Z Received 16777216 of 135419135 (12.4%), 16.0 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:05.3441737Z Received 20971520 of 244898094 (8.6%), 20.0 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:05.3629852Z Received 16777216 of 477700187 (3.5%), 16.0 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:05.3846068Z Received 16777216 of 39619899 (42.3%), 16.0 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:05.6100549Z Received 39619899 of 39619899 (100.0%), 30.8 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:05.6103470Z Cache Size: ~38 MB (39619899 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:05.6515242Z [command]/usr/bin/tar -xf /home/runner/work/_temp/22272995-f8ce-470c-af3a-f4bd46efbff6/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:06.0397163Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:06.0487509Z Restored cache entry with key gradle-generated-gradle-jars-v1-26cfecc158c44513d188405a5d2d0d9c to /home/runner/.gradle/caches/8.9/generated-gradle-jars/gradle-api-8.9.jar in 2173ms
+Build & Test	Setup Gradle	2026-03-18T06:48:06.3266780Z Received 134217728 of 135419135 (99.1%), 63.9 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:06.3438436Z Received 125829120 of 244898094 (51.4%), 60.0 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:06.3647635Z Received 135419135 of 135419135 (100.0%), 63.3 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:06.3648411Z Cache Size: ~129 MB (135419135 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:06.3648983Z Received 113246208 of 477700187 (23.7%), 53.9 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:06.3671587Z [command]/usr/bin/tar -xf /home/runner/work/_temp/1bc31a90-ccb7-4e38-aaa9-1bb434db238f/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:06.6270559Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:06.6614881Z Restored cache entry with key gradle-wrapper-zips-v1-df6ecc383658ce44d9cbac4d1bfd12bf to /home/runner/.gradle/wrapper/dists/gradle-8.9-bin/90cnw93cvbtalezasaz0blq0a in 2785ms
+Build & Test	Setup Gradle	2026-03-18T06:48:07.3460515Z Received 236509486 of 244898094 (96.6%), 75.2 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:07.4338888Z Received 244898094 of 244898094 (100.0%), 75.6 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:07.4341791Z Cache Size: ~234 MB (244898094 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:07.4344846Z Received 201326592 of 477700187 (42.1%), 62.5 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:07.4733790Z [command]/usr/bin/tar -xf /home/runner/work/_temp/b758faba-256c-4683-9281-48da07c79072/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:08.4348006Z Received 268435456 of 477700187 (56.2%), 62.9 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:09.5097644Z Received 402653184 of 477700187 (84.3%), 74.6 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:09.8524169Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:09.9233742Z Restored cache entry with key gradle-transforms-v1-d5b77c5723bf6c6228af6de63586f367 to /home/runner/.gradle/caches/transforms-4/*/,/home/runner/.gradle/caches/*/transforms/*/ in 6046ms
+Build & Test	Setup Gradle	2026-03-18T06:48:10.0913929Z Received 477700187 of 477700187 (100.0%), 79.5 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:10.0917547Z Cache Size: ~456 MB (477700187 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:10.0950334Z [command]/usr/bin/tar -xf /home/runner/work/_temp/88708718-968c-4d4d-9fdf-a6d3eee0f2ac/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:11.1179993Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:11.2179679Z Restored cache entry with key gradle-dependencies-v1-162fba13e4d6aa5aefb8ad4a920ac24d to /home/runner/.gradle/caches/modules-*/files-*/*/*/*/* in 7341ms
+Build & Test	Setup Gradle	2026-03-18T06:48:11.2267802Z ##[endgroup]
+Build & Test	Setup Gradle	2026-03-18T06:48:11.5433774Z Fetched 10 of 33 checksums
+Build & Test	Setup Gradle	2026-03-18T06:48:11.6654993Z Fetched 20 of 33 checksums
+Build & Test	Setup Gradle	2026-03-18T06:48:11.7881987Z Fetched 30 of 33 checksums
+Build & Test	Setup Gradle	2026-03-18T06:48:11.9026942Z Fetched 33 of 33 checksums
+Build & Test	Setup Gradle	2026-03-18T06:48:11.9029914Z ##[group]All Gradle Wrapper jars are valid
+Build & Test	Setup Gradle	2026-03-18T06:48:11.9031284Z G£ô Found known Gradle Wrapper JAR files:
+Build & Test	Setup Gradle	2026-03-18T06:48:11.9032473Z   7ef3d73bd95c047814d76ec8324f72deefb96593eb9ce87aa06ecdcdaba7ffe8 gradle/wrapper/gradle-wrapper.jar
+Build & Test	Setup Gradle	2026-03-18T06:48:11.9033581Z ##[endgroup]
+Build & Test	Create local.properties	n++2026-03-18T06:48:11.9210374Z ##[group]Run echo "ETHERSCAN_API_KEY=" >> local.properties
+Build & Test	Create local.properties	2026-03-18T06:48:11.9210947Z [36;1mecho "ETHERSCAN_API_KEY=" >> local.properties[0m
+Build & Test	Create local.properties	2026-03-18T06:48:11.9211384Z [36;1mecho "COINGECKO_API_KEY=" >> local.properties[0m
+Build & Test	Create local.properties	2026-03-18T06:48:11.9264785Z shell: /usr/bin/bash -e {0}
+Build & Test	Create local.properties	2026-03-18T06:48:11.9265108Z env:
+Build & Test	Create local.properties	2026-03-18T06:48:11.9265360Z   JAVA_VERSION: 17
+Build & Test	Create local.properties	2026-03-18T06:48:11.9288153Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Create local.properties	2026-03-18T06:48:11.9288663Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Create local.properties	2026-03-18T06:48:11.9289234Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Create local.properties	2026-03-18T06:48:11.9289713Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+Build & Test	Create local.properties	2026-03-18T06:48:11.9290072Z   GRADLE_USER_HOME: /home/runner/.gradle
+Build & Test	Create local.properties	2026-03-18T06:48:11.9290407Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+Build & Test	Create local.properties	2026-03-18T06:48:11.9290758Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+Build & Test	Create local.properties	2026-03-18T06:48:11.9291238Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+Build & Test	Create local.properties	2026-03-18T06:48:11.9291809Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+Build & Test	Create local.properties	2026-03-18T06:48:11.9292166Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+Build & Test	Create local.properties	2026-03-18T06:48:11.9292472Z ##[endgroup]
+Build & Test	Run lint	n++2026-03-18T06:48:11.9429126Z ##[group]Run ./gradlew lint --continue
+Build & Test	Run lint	2026-03-18T06:48:11.9429578Z [36;1m./gradlew lint --continue[0m
+Build & Test	Run lint	2026-03-18T06:48:11.9479087Z shell: /usr/bin/bash -e {0}
+Build & Test	Run lint	2026-03-18T06:48:11.9479399Z env:
+Build & Test	Run lint	2026-03-18T06:48:11.9479617Z   JAVA_VERSION: 17
+Build & Test	Run lint	2026-03-18T06:48:11.9479880Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Run lint	2026-03-18T06:48:11.9480307Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Run lint	2026-03-18T06:48:11.9481094Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Run lint	2026-03-18T06:48:11.9481565Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+Build & Test	Run lint	2026-03-18T06:48:11.9481919Z   GRADLE_USER_HOME: /home/runner/.gradle
+Build & Test	Run lint	2026-03-18T06:48:11.9482250Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+Build & Test	Run lint	2026-03-18T06:48:11.9482579Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+Build & Test	Run lint	2026-03-18T06:48:11.9483069Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+Build & Test	Run lint	2026-03-18T06:48:11.9483615Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+Build & Test	Run lint	2026-03-18T06:48:11.9484009Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+Build & Test	Run lint	2026-03-18T06:48:11.9484316Z ##[endgroup]
+Build & Test	Run lint	2026-03-18T06:48:13.0105737Z Starting a Gradle Daemon (subsequent builds will be faster)
+Build & Test	Run lint	2026-03-18T06:48:31.2119268Z > Task :core:crypto:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:48:31.2124033Z > Task :core:crypto:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:48:31.5087367Z > Task :core:crypto:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:48:31.5091387Z > Task :core:crypto:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:48:31.5098946Z > Task :core:crypto:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:48:31.5107638Z > Task :core:crypto:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:48:31.5109018Z > Task :core:crypto:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:48:31.5109976Z > Task :core:crypto:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:48:31.5110574Z > Task :core:crypto:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:48:31.6084672Z > Task :core:crypto:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:48:33.2094087Z > Task :core:crypto:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:48:33.2094928Z > Task :core:crypto:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:48:33.3095895Z > Task :core:crypto:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:48:33.3099218Z > Task :core:crypto:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:48:33.3100499Z > Task :core:crypto:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:48:33.3146527Z > Task :core:crypto:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:48:33.3147572Z > Task :core:crypto:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:48:33.3148431Z > Task :core:crypto:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:48:33.3149070Z > Task :core:crypto:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:48:33.3149669Z > Task :core:keystore:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:48:33.3150289Z > Task :core:keystore:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:48:33.3150890Z > Task :core:crypto:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:48:33.3151486Z > Task :core:keystore:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:48:33.4086550Z > Task :core:keystore:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:48:33.4111956Z > Task :core:keystore:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:48:33.4113220Z > Task :core:keystore:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:48:33.4114228Z > Task :core:keystore:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:48:33.4115509Z > Task :core:crypto:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:48:33.4117072Z > Task :core:keystore:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:48:33.4118245Z > Task :core:crypto:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:48:33.9117537Z > Task :core:keystore:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:48:33.9118324Z > Task :core:keystore:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:48:34.0092395Z > Task :core:keystore:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:48:34.0095394Z > Task :core:keystore:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:48:34.0107040Z > Task :core:keystore:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:48:34.0107765Z > Task :core:keystore:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:48:34.0108447Z > Task :core:keystore:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:48:34.0129641Z > Task :core:keystore:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:48:34.0130750Z > Task :core:keystore:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:48:34.0133141Z > Task :core:keystore:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:48:35.1096476Z > Task :core:keystore:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:48:35.1097258Z > Task :core:keystore:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:48:35.2089997Z > Task :core:keystore:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:48:35.2091375Z > Task :core:security:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:48:35.2092395Z > Task :core:security:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:48:35.2101281Z > Task :core:keystore:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:48:35.2102124Z > Task :core:security:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:48:35.2102815Z > Task :core:security:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:48:35.2103495Z > Task :core:security:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:48:35.2104354Z > Task :core:security:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:48:35.2129962Z > Task :core:security:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:48:35.2130964Z > Task :core:security:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:48:35.3109868Z > Task :core:security:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:48:35.3113547Z > Task :core:security:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:48:35.3119399Z > Task :core:security:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:48:35.3120165Z > Task :core:security:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:48:35.3131962Z > Task :core:security:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:48:35.4104242Z > Task :core:security:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:48:35.4120952Z > Task :core:security:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:48:35.4121960Z > Task :core:security:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:48:35.4122660Z > Task :core:security:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:48:35.4123352Z > Task :core:security:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:48:35.6084450Z > Task :core:security:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:48:35.6085640Z > Task :core:security:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:48:35.7082626Z > Task :core:security:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:48:35.7092701Z > Task :core:security:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:48:35.7093401Z > Task :data:network:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:48:35.7094042Z > Task :data:network:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:48:35.7094692Z > Task :data:network:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:48:35.7095380Z > Task :data:network:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:48:35.7096143Z > Task :data:network:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:48:35.7104539Z > Task :data:network:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:48:35.7114012Z > Task :data:network:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:48:35.7120839Z > Task :data:network:generateDebugBuildConfig
+Build & Test	Run lint	2026-03-18T06:48:35.7123058Z > Task :data:network:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:48:35.8088992Z > Task :data:network:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:48:35.8092487Z > Task :data:network:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:48:35.8094558Z > Task :data:network:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:48:35.8129111Z > Task :data:network:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:48:35.8130549Z > Task :domain:model:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:48:35.8140427Z > Task :domain:model:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:48:35.8148894Z > Task :domain:model:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:48:35.8155948Z > Task :domain:model:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:48:35.9127754Z > Task :domain:model:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:48:35.9128845Z > Task :domain:model:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:48:35.9129750Z > Task :domain:model:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:48:35.9130519Z > Task :domain:model:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:48:38.2870909Z ##[error]The operation was canceled.
+Build & Test	Upload lint results	n++2026-03-18T06:48:38.2987958Z ##[group]Run actions/upload-artifact@v4
+Build & Test	Upload lint results	2026-03-18T06:48:38.2988524Z with:
+Build & Test	Upload lint results	2026-03-18T06:48:38.2988884Z   name: lint-results
+Build & Test	Upload lint results	2026-03-18T06:48:38.2989325Z   path: **/build/reports/lint-results-*.html
+Build & Test	Upload lint results	2026-03-18T06:48:38.2989849Z   retention-days: 14
+Build & Test	Upload lint results	2026-03-18T06:48:38.2990247Z   if-no-files-found: warn
+Build & Test	Upload lint results	2026-03-18T06:48:38.2990660Z   compression-level: 6
+Build & Test	Upload lint results	2026-03-18T06:48:38.2991056Z   overwrite: false
+Build & Test	Upload lint results	2026-03-18T06:48:38.2991446Z   include-hidden-files: false
+Build & Test	Upload lint results	2026-03-18T06:48:38.2991878Z env:
+Build & Test	Upload lint results	2026-03-18T06:48:38.2992200Z   JAVA_VERSION: 17
+Build & Test	Upload lint results	2026-03-18T06:48:38.2992587Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Upload lint results	2026-03-18T06:48:38.2993440Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Upload lint results	2026-03-18T06:48:38.2994306Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Upload lint results	2026-03-18T06:48:38.2995070Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+Build & Test	Upload lint results	2026-03-18T06:48:38.2995690Z   GRADLE_USER_HOME: /home/runner/.gradle
+Build & Test	Upload lint results	2026-03-18T06:48:38.2996422Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+Build & Test	Upload lint results	2026-03-18T06:48:38.2997083Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+Build & Test	Upload lint results	2026-03-18T06:48:38.2997942Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+Build & Test	Upload lint results	2026-03-18T06:48:38.2998852Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+Build & Test	Upload lint results	2026-03-18T06:48:38.2999419Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+Build & Test	Upload lint results	2026-03-18T06:48:38.2999934Z ##[endgroup]
+Build & Test	Upload lint results	2026-03-18T06:48:38.9821151Z ##[warning]No files were found with the provided path: **/build/reports/lint-results-*.html. No artifacts will be uploaded.
+Build & Test	Upload test results	n++2026-03-18T06:48:39.0300994Z ##[group]Run actions/upload-artifact@v4
+Build & Test	Upload test results	2026-03-18T06:48:39.0301632Z with:
+Build & Test	Upload test results	2026-03-18T06:48:39.0302032Z   name: unit-test-results
+Build & Test	Upload test results	2026-03-18T06:48:39.0302509Z   path: **/build/reports/tests/
+Build & Test	Upload test results	2026-03-18T06:48:39.0303003Z   retention-days: 14
+Build & Test	Upload test results	2026-03-18T06:48:39.0303446Z   if-no-files-found: warn
+Build & Test	Upload test results	2026-03-18T06:48:39.0303907Z   compression-level: 6
+Build & Test	Upload test results	2026-03-18T06:48:39.0304352Z   overwrite: false
+Build & Test	Upload test results	2026-03-18T06:48:39.0304787Z   include-hidden-files: false
+Build & Test	Upload test results	2026-03-18T06:48:39.0305252Z env:
+Build & Test	Upload test results	2026-03-18T06:48:39.0305624Z   JAVA_VERSION: 17
+Build & Test	Upload test results	2026-03-18T06:48:39.0306049Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Upload test results	2026-03-18T06:48:39.0337232Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Upload test results	2026-03-18T06:48:39.0338165Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Upload test results	2026-03-18T06:48:39.0338951Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+Build & Test	Upload test results	2026-03-18T06:48:39.0339513Z   GRADLE_USER_HOME: /home/runner/.gradle
+Build & Test	Upload test results	2026-03-18T06:48:39.0339999Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+Build & Test	Upload test results	2026-03-18T06:48:39.0340652Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+Build & Test	Upload test results	2026-03-18T06:48:39.0341443Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+Build & Test	Upload test results	2026-03-18T06:48:39.0342320Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+Build & Test	Upload test results	2026-03-18T06:48:39.0342935Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+Build & Test	Upload test results	2026-03-18T06:48:39.0343433Z ##[endgroup]
+Build & Test	Upload test results	2026-03-18T06:48:39.9039796Z ##[warning]No files were found with the provided path: **/build/reports/tests/. No artifacts will be uploaded.
+Build & Test	Post Set up JDK 17	n++2026-03-18T06:48:39.9499257Z Post job cleanup.
+Build & Test	Post Checkout repository	n++2026-03-18T06:48:40.3621815Z Post job cleanup.
+Build & Test	Post Checkout repository	2026-03-18T06:48:40.6584331Z [command]/usr/bin/git version
+Build & Test	Post Checkout repository	2026-03-18T06:48:40.6765520Z git version 2.53.0
+Build & Test	Post Checkout repository	2026-03-18T06:48:40.6959188Z Temporarily overriding HOME='/home/runner/work/_temp/3414efda-d8cf-4052-848e-17df38c04d70' before making global git config changes
+Build & Test	Post Checkout repository	2026-03-18T06:48:40.6965227Z Adding repository directory to the temporary git global config as a safe directory
+Build & Test	Post Checkout repository	2026-03-18T06:48:40.6977337Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/TranzoWallet/TranzoWallet
+Build & Test	Post Checkout repository	2026-03-18T06:48:40.7165670Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build & Test	Post Checkout repository	2026-03-18T06:48:40.7295662Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build & Test	Post Checkout repository	2026-03-18T06:48:40.8371189Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build & Test	Post Checkout repository	2026-03-18T06:48:40.8457748Z http.https://github.com/.extraheader
+Build & Test	Post Checkout repository	2026-03-18T06:48:40.8491320Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Build & Test	Post Checkout repository	2026-03-18T06:48:40.8611644Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build & Test	Post Checkout repository	2026-03-18T06:48:40.9472045Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build & Test	Post Checkout repository	2026-03-18T06:48:40.9530286Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build & Test	Complete job	n++2026-03-18T06:48:41.0053270Z Cleaning up orphan processes
+Build & Test	Complete job	2026-03-18T06:48:41.1099262Z Terminate orphan process: pid (2460) (java)
+Build & Test	Complete job	2026-03-18T06:48:41.1137174Z Terminate orphan process: pid (2497) (java)
+Build & Test	Complete job	2026-03-18T06:48:41.1597508Z Terminate orphan process: pid (2592) (java)
+Build & Test	Complete job	2026-03-18T06:48:41.1617146Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-java@v4, actions/upload-artifact@v4, gradle/actions/setup-gradle@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

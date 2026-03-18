@@ -1,0 +1,1352 @@
+Build & Test	Set up job	n++2026-03-18T06:48:47.8068380Z Current runner version: '2.332.0'
+Build & Test	Set up job	2026-03-18T06:48:47.8104075Z ##[group]Runner Image Provisioner
+Build & Test	Set up job	2026-03-18T06:48:47.8105983Z Hosted Compute Agent
+Build & Test	Set up job	2026-03-18T06:48:47.8107011Z Version: 20260213.493
+Build & Test	Set up job	2026-03-18T06:48:47.8107918Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Build & Test	Set up job	2026-03-18T06:48:47.8109015Z Build Date: 2026-02-13T00:28:41Z
+Build & Test	Set up job	2026-03-18T06:48:47.8109665Z Worker ID: {6924ec91-8e02-439f-b0ec-ae03afd2a503}
+Build & Test	Set up job	2026-03-18T06:48:47.8110514Z Azure Region: eastus
+Build & Test	Set up job	2026-03-18T06:48:47.8111062Z ##[endgroup]
+Build & Test	Set up job	2026-03-18T06:48:47.8112559Z ##[group]Operating System
+Build & Test	Set up job	2026-03-18T06:48:47.8113591Z Ubuntu
+Build & Test	Set up job	2026-03-18T06:48:47.8114191Z 24.04.3
+Build & Test	Set up job	2026-03-18T06:48:47.8114689Z LTS
+Build & Test	Set up job	2026-03-18T06:48:47.8115257Z ##[endgroup]
+Build & Test	Set up job	2026-03-18T06:48:47.8115843Z ##[group]Runner Image
+Build & Test	Set up job	2026-03-18T06:48:47.8116395Z Image: ubuntu-24.04
+Build & Test	Set up job	2026-03-18T06:48:47.8116998Z Version: 20260309.50.1
+Build & Test	Set up job	2026-03-18T06:48:47.8117963Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260309.50/images/ubuntu/Ubuntu2404-Readme.md
+Build & Test	Set up job	2026-03-18T06:48:47.8119721Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260309.50
+Build & Test	Set up job	2026-03-18T06:48:47.8120622Z ##[endgroup]
+Build & Test	Set up job	2026-03-18T06:48:47.8121771Z ##[group]GITHUB_TOKEN Permissions
+Build & Test	Set up job	2026-03-18T06:48:47.8124234Z Contents: read
+Build & Test	Set up job	2026-03-18T06:48:47.8124837Z Metadata: read
+Build & Test	Set up job	2026-03-18T06:48:47.8125484Z Packages: read
+Build & Test	Set up job	2026-03-18T06:48:47.8126120Z ##[endgroup]
+Build & Test	Set up job	2026-03-18T06:48:47.8128454Z Secret source: Actions
+Build & Test	Set up job	2026-03-18T06:48:47.8129721Z Prepare workflow directory
+Build & Test	Set up job	2026-03-18T06:48:47.8515171Z Prepare all required actions
+Build & Test	Set up job	2026-03-18T06:48:47.8552675Z Getting action download info
+Build & Test	Set up job	2026-03-18T06:48:48.1901819Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Build & Test	Set up job	2026-03-18T06:48:48.9343909Z Download action repository 'actions/setup-java@v4' (SHA:c1e323688fd81a25caa38c78aa6df2d33d3e20d9)
+Build & Test	Set up job	2026-03-18T06:48:49.2045958Z Download action repository 'gradle/actions@v4' (SHA:ed408507eac070d1f99cc633dbcf757c94c7933a)
+Build & Test	Set up job	2026-03-18T06:48:49.9440025Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+Build & Test	Set up job	2026-03-18T06:48:50.2482675Z Complete job name: Build & Test
+Build & Test	Checkout repository	n++2026-03-18T06:48:50.3158639Z ##[group]Run actions/checkout@v4
+Build & Test	Checkout repository	2026-03-18T06:48:50.3159256Z with:
+Build & Test	Checkout repository	2026-03-18T06:48:50.3159511Z   repository: Pranav00x/TranzoWallet
+Build & Test	Checkout repository	2026-03-18T06:48:50.3159997Z   token: ***
+Build & Test	Checkout repository	2026-03-18T06:48:50.3160216Z   ssh-strict: true
+Build & Test	Checkout repository	2026-03-18T06:48:50.3160438Z   ssh-user: git
+Build & Test	Checkout repository	2026-03-18T06:48:50.3160663Z   persist-credentials: true
+Build & Test	Checkout repository	2026-03-18T06:48:50.3160925Z   clean: true
+Build & Test	Checkout repository	2026-03-18T06:48:50.3161154Z   sparse-checkout-cone-mode: true
+Build & Test	Checkout repository	2026-03-18T06:48:50.3161439Z   fetch-depth: 1
+Build & Test	Checkout repository	2026-03-18T06:48:50.3161654Z   fetch-tags: false
+Build & Test	Checkout repository	2026-03-18T06:48:50.3161891Z   show-progress: true
+Build & Test	Checkout repository	2026-03-18T06:48:50.3162113Z   lfs: false
+Build & Test	Checkout repository	2026-03-18T06:48:50.3162313Z   submodules: false
+Build & Test	Checkout repository	2026-03-18T06:48:50.3162541Z   set-safe-directory: true
+Build & Test	Checkout repository	2026-03-18T06:48:50.3162971Z env:
+Build & Test	Checkout repository	2026-03-18T06:48:50.3163188Z   JAVA_VERSION: 17
+Build & Test	Checkout repository	2026-03-18T06:48:50.3163607Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Checkout repository	2026-03-18T06:48:50.3163885Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:50.4236902Z Syncing repository: Pranav00x/TranzoWallet
+Build & Test	Checkout repository	2026-03-18T06:48:50.4238293Z ##[group]Getting Git version info
+Build & Test	Checkout repository	2026-03-18T06:48:50.4238818Z Working directory is '/home/runner/work/TranzoWallet/TranzoWallet'
+Build & Test	Checkout repository	2026-03-18T06:48:50.4239442Z [command]/usr/bin/git version
+Build & Test	Checkout repository	2026-03-18T06:48:50.5373515Z git version 2.53.0
+Build & Test	Checkout repository	2026-03-18T06:48:50.5401039Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:50.5416155Z Temporarily overriding HOME='/home/runner/work/_temp/67610116-4731-4547-86a3-785648111e2e' before making global git config changes
+Build & Test	Checkout repository	2026-03-18T06:48:50.5417225Z Adding repository directory to the temporary git global config as a safe directory
+Build & Test	Checkout repository	2026-03-18T06:48:50.5421987Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/TranzoWallet/TranzoWallet
+Build & Test	Checkout repository	2026-03-18T06:48:50.5511487Z Deleting the contents of '/home/runner/work/TranzoWallet/TranzoWallet'
+Build & Test	Checkout repository	2026-03-18T06:48:50.5515709Z ##[group]Initializing the repository
+Build & Test	Checkout repository	2026-03-18T06:48:50.5519764Z [command]/usr/bin/git init /home/runner/work/TranzoWallet/TranzoWallet
+Build & Test	Checkout repository	2026-03-18T06:48:50.6336922Z hint: Using 'master' as the name for the initial branch. This default branch name
+Build & Test	Checkout repository	2026-03-18T06:48:50.6338165Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Build & Test	Checkout repository	2026-03-18T06:48:50.6338856Z hint: to use in all of your new repositories, which will suppress this warning,
+Build & Test	Checkout repository	2026-03-18T06:48:50.6339378Z hint: call:
+Build & Test	Checkout repository	2026-03-18T06:48:50.6339634Z hint:
+Build & Test	Checkout repository	2026-03-18T06:48:50.6340017Z hint: 	git config --global init.defaultBranch <name>
+Build & Test	Checkout repository	2026-03-18T06:48:50.6340445Z hint:
+Build & Test	Checkout repository	2026-03-18T06:48:50.6340838Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Build & Test	Checkout repository	2026-03-18T06:48:50.6341487Z hint: 'development'. The just-created branch can be renamed via this command:
+Build & Test	Checkout repository	2026-03-18T06:48:50.6341987Z hint:
+Build & Test	Checkout repository	2026-03-18T06:48:50.6342250Z hint: 	git branch -m <name>
+Build & Test	Checkout repository	2026-03-18T06:48:50.6342562Z hint:
+Build & Test	Checkout repository	2026-03-18T06:48:50.6342981Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Build & Test	Checkout repository	2026-03-18T06:48:50.6384132Z Initialized empty Git repository in /home/runner/work/TranzoWallet/TranzoWallet/.git/
+Build & Test	Checkout repository	2026-03-18T06:48:50.6398044Z [command]/usr/bin/git remote add origin https://github.com/Pranav00x/TranzoWallet
+Build & Test	Checkout repository	2026-03-18T06:48:50.6481568Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:50.6482412Z ##[group]Disabling automatic garbage collection
+Build & Test	Checkout repository	2026-03-18T06:48:50.6487080Z [command]/usr/bin/git config --local gc.auto 0
+Build & Test	Checkout repository	2026-03-18T06:48:50.6516636Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:50.6517432Z ##[group]Setting up auth
+Build & Test	Checkout repository	2026-03-18T06:48:50.6524545Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build & Test	Checkout repository	2026-03-18T06:48:50.6556118Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build & Test	Checkout repository	2026-03-18T06:48:50.8667110Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build & Test	Checkout repository	2026-03-18T06:48:50.8679072Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build & Test	Checkout repository	2026-03-18T06:48:50.8877768Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build & Test	Checkout repository	2026-03-18T06:48:50.8915574Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build & Test	Checkout repository	2026-03-18T06:48:50.9172273Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build & Test	Checkout repository	2026-03-18T06:48:50.9208747Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:50.9209304Z ##[group]Fetching the repository
+Build & Test	Checkout repository	2026-03-18T06:48:50.9218392Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +bf22a2509fa0ce977cbc30b102185d2825afd863:refs/remotes/origin/main
+Build & Test	Checkout repository	2026-03-18T06:48:51.2302583Z From https://github.com/Pranav00x/TranzoWallet
+Build & Test	Checkout repository	2026-03-18T06:48:51.2304253Z  * [new ref]         bf22a2509fa0ce977cbc30b102185d2825afd863 -> origin/main
+Build & Test	Checkout repository	2026-03-18T06:48:51.2386750Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:51.2387428Z ##[group]Determining the checkout info
+Build & Test	Checkout repository	2026-03-18T06:48:51.2388370Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:51.2394317Z [command]/usr/bin/git sparse-checkout disable
+Build & Test	Checkout repository	2026-03-18T06:48:51.2482996Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Build & Test	Checkout repository	2026-03-18T06:48:51.2509606Z ##[group]Checking out the ref
+Build & Test	Checkout repository	2026-03-18T06:48:51.2513703Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Build & Test	Checkout repository	2026-03-18T06:48:51.2732312Z Switched to a new branch 'main'
+Build & Test	Checkout repository	2026-03-18T06:48:51.2735176Z branch 'main' set up to track 'origin/main'.
+Build & Test	Checkout repository	2026-03-18T06:48:51.2741360Z ##[endgroup]
+Build & Test	Checkout repository	2026-03-18T06:48:51.2777683Z [command]/usr/bin/git log -1 --format=%H
+Build & Test	Checkout repository	2026-03-18T06:48:51.2800412Z bf22a2509fa0ce977cbc30b102185d2825afd863
+Build & Test	Set up JDK 17	n++2026-03-18T06:48:51.3064409Z ##[group]Run actions/setup-java@v4
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3064725Z with:
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3065076Z   java-version: 17
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3065267Z   distribution: temurin
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3065468Z   java-package: jdk
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3065645Z   check-latest: false
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3065829Z   server-id: github
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3066010Z   server-username: GITHUB_ACTOR
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3066239Z   server-password: GITHUB_TOKEN
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3066459Z   overwrite-settings: true
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3066665Z   job-status: success
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3067008Z   token: ***
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3067176Z env:
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3067334Z   JAVA_VERSION: 17
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3067517Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.3067729Z ##[endgroup]
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5037053Z ##[group]Installed distributions
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5187763Z Resolved Java 17.0.18+8 from tool-cache
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5188811Z Setting Java 17.0.18+8 as the default
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5202516Z Creating toolchains.xml for JDK version 17 from temurin
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5279242Z Writing to /home/runner/.m2/toolchains.xml
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5279708Z 
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5279872Z Java configuration:
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5281366Z   Distribution: temurin
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5281803Z   Version: 17.0.18+8
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5283934Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5284521Z 
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5284990Z ##[endgroup]
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5304337Z Creating settings.xml with server-id: github
+Build & Test	Set up JDK 17	2026-03-18T06:48:51.5309791Z Writing to /home/runner/.m2/settings.xml
+Build & Test	Setup Gradle	n++2026-03-18T06:48:51.5541779Z ##[group]Run gradle/actions/setup-gradle@v4
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5542099Z with:
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5542278Z   cache-read-only: false
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5542490Z   cache-disabled: false
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5542695Z   cache-write-only: false
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5542922Z   cache-overwrite-existing: false
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5543157Z   cache-cleanup: on-success
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5543655Z   gradle-home-cache-includes: caches
+Build & Test	Setup Gradle	notifications
+Build & Test	Setup Gradle	
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5543975Z   add-job-summary: always
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5544211Z   add-job-summary-as-pr-comment: never
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5544479Z   dependency-graph: disabled
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5544764Z   dependency-graph-report-dir: dependency-graph-reports
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5545108Z   dependency-graph-continue-on-failure: true
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5545379Z   build-scan-publish: false
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5545602Z   validate-wrappers: true
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5545816Z   allow-snapshot-wrappers: false
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5546075Z   gradle-home-cache-strict-match: false
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5546381Z   workflow-job-context: null
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5546732Z   github-token: ***
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5546914Z env:
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5547068Z   JAVA_VERSION: 17
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5547255Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5547568Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5548022Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Setup Gradle	2026-03-18T06:48:51.5548374Z ##[endgroup]
+Build & Test	Setup Gradle	2026-03-18T06:48:52.9956320Z Merged default JDK locations into /home/runner/.m2/toolchains.xml
+Build & Test	Setup Gradle	2026-03-18T06:48:52.9958713Z Preparing cache for cleanup.
+Build & Test	Setup Gradle	2026-03-18T06:48:52.9962917Z ##[group]Restore Gradle state from cache
+Build & Test	Setup Gradle	2026-03-18T06:48:53.0927415Z Cache hit for restore-key: gradle-home-v1|Linux-X64|build[4757b9a07e36f0d7bcbca81beedd816f]-3a7f4da390b220bf591c90963d02f868f08516d5
+Build & Test	Setup Gradle	2026-03-18T06:48:53.2328356Z Received 6016437 of 6016437 (100.0%), 54.6 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:53.2330798Z Cache Size: ~6 MB (6016437 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:53.2369620Z [command]/usr/bin/tar -xf /home/runner/work/_temp/b28c9cac-b25a-4d12-9cd8-4a2eaa67ec67/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:53.4389281Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:53.4411467Z Restored cache entry with key gradle-home-v1|Linux-X64|build[4757b9a07e36f0d7bcbca81beedd816f]-bf22a2509fa0ce977cbc30b102185d2825afd863 to /home/runner/.gradle/caches,/home/runner/.gradle/notifications,/home/runner/.gradle/.setup-gradle in 443ms
+Build & Test	Setup Gradle	2026-03-18T06:48:53.4989656Z Cache hit for: gradle-transforms-v1-d5b77c5723bf6c6228af6de63586f367
+Build & Test	Setup Gradle	2026-03-18T06:48:53.5039346Z Cache hit for: gradle-dependencies-v1-162fba13e4d6aa5aefb8ad4a920ac24d
+Build & Test	Setup Gradle	2026-03-18T06:48:53.5070377Z Cache hit for: gradle-groovy-dsl-v1-db4102aba42c9df7a23ea2b0e16ccf26
+Build & Test	Setup Gradle	2026-03-18T06:48:53.5077708Z Cache hit for: gradle-instrumented-jars-v1-26ce38ab989615990dc2d3189948bd90
+Build & Test	Setup Gradle	2026-03-18T06:48:53.5141674Z Cache hit for: gradle-generated-gradle-jars-v1-26cfecc158c44513d188405a5d2d0d9c
+Build & Test	Setup Gradle	2026-03-18T06:48:53.5167525Z Cache hit for: gradle-wrapper-zips-v1-df6ecc383658ce44d9cbac4d1bfd12bf
+Build & Test	Setup Gradle	2026-03-18T06:48:53.5172069Z Cache hit for: gradle-kotlin-dsl-v1-d39e68948c61b69a053111b9b299a590
+Build & Test	Setup Gradle	2026-03-18T06:48:53.6909749Z Received 533614 of 533614 (100.0%), 6.4 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:53.6910516Z Cache Size: ~1 MB (533614 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:54.0620052Z Received 122599 of 122599 (100.0%), 0.4 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:54.0620999Z Cache Size: ~0 MB (122599 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:54.1778395Z Received 197011 of 197011 (100.0%), 0.4 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:54.1779292Z Cache Size: ~0 MB (197011 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:54.5825157Z Received 96468992 of 244898094 (39.4%), 87.2 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:54.5826082Z Received 58720256 of 477700187 (12.3%), 54.7 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:54.5828631Z [command]/usr/bin/tar -xf /home/runner/work/_temp/9a804d58-2111-4a78-8bb6-83b458ffeec8/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:54.6694435Z Received 75497472 of 135419135 (55.8%), 67.1 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:54.6695720Z Received 31231291 of 39619899 (78.8%), 28.4 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:54.9618734Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:54.9950304Z Received 39619899 of 39619899 (100.0%), 27.5 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:54.9951583Z Cache Size: ~38 MB (39619899 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:54.9962218Z Restored cache entry with key gradle-kotlin-dsl-v1-d39e68948c61b69a053111b9b299a590 to /home/runner/.gradle/caches/*/kotlin-dsl/accessors/*/,/home/runner/.gradle/caches/*/kotlin-dsl/scripts/*/ in 1552ms
+Build & Test	Setup Gradle	2026-03-18T06:48:55.0379014Z [command]/usr/bin/tar -xf /home/runner/work/_temp/24faa0a7-5b39-4d9e-b3ec-087f0e62ab66/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:55.2098576Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:55.2305985Z Restored cache entry with key gradle-instrumented-jars-v1-26ce38ab989615990dc2d3189948bd90 to /home/runner/.gradle/caches/jars-*/*/ in 1788ms
+Build & Test	Setup Gradle	2026-03-18T06:48:55.2308272Z [command]/usr/bin/tar -xf /home/runner/work/_temp/d1f223e2-2d17-4a87-8aec-5204f4723270/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:55.2692313Z Received 135419135 of 135419135 (100.0%), 77.1 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:55.2693044Z Cache Size: ~129 MB (135419135 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:55.3082575Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:55.3431107Z Restored cache entry with key gradle-groovy-dsl-v1-db4102aba42c9df7a23ea2b0e16ccf26 to /home/runner/.gradle/caches/*/groovy-dsl/*/ in 1899ms
+Build & Test	Setup Gradle	2026-03-18T06:48:55.3966231Z [command]/usr/bin/tar -xf /home/runner/work/_temp/55c22bf8-4830-43df-b481-17dad88a41b9/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:55.5770404Z [command]/usr/bin/tar -xf /home/runner/work/_temp/ec069d39-0657-4d21-a0d4-4008c61e0b21/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:55.6464479Z Received 205520896 of 244898094 (83.9%), 92.5 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:55.6476475Z Received 134217728 of 477700187 (28.1%), 61.3 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:55.8545379Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:55.8722048Z Restored cache entry with key gradle-generated-gradle-jars-v1-26cfecc158c44513d188405a5d2d0d9c to /home/runner/.gradle/caches/8.9/generated-gradle-jars/gradle-api-8.9.jar in 2428ms
+Build & Test	Setup Gradle	2026-03-18T06:48:55.9564126Z Received 244898094 of 244898094 (100.0%), 96.1 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:55.9570445Z Cache Size: ~234 MB (244898094 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:56.0090883Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:56.0260457Z [command]/usr/bin/tar -xf /home/runner/work/_temp/b3d7c2a0-2056-45fe-af6d-3682c563af72/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:56.0446553Z Restored cache entry with key gradle-wrapper-zips-v1-df6ecc383658ce44d9cbac4d1bfd12bf to /home/runner/.gradle/wrapper/dists/gradle-8.9-bin/90cnw93cvbtalezasaz0blq0a in 2602ms
+Build & Test	Setup Gradle	2026-03-18T06:48:56.6542259Z Received 335544320 of 477700187 (70.2%), 103.3 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:57.3401150Z Received 477700187 of 477700187 (100.0%), 120.5 MBs/sec
+Build & Test	Setup Gradle	2026-03-18T06:48:57.3404683Z Cache Size: ~456 MB (477700187 B)
+Build & Test	Setup Gradle	2026-03-18T06:48:57.3455119Z [command]/usr/bin/tar -xf /home/runner/work/_temp/c94ad4a5-53ce-4ba2-8080-7898a6172ca5/cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --use-compress-program unzstd
+Build & Test	Setup Gradle	2026-03-18T06:48:59.3490276Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:59.5165016Z Restored cache entry with key gradle-dependencies-v1-162fba13e4d6aa5aefb8ad4a920ac24d to /home/runner/.gradle/caches/modules-*/files-*/*/*/*/* in 6074ms
+Build & Test	Setup Gradle	2026-03-18T06:48:59.5795538Z Cache restored successfully
+Build & Test	Setup Gradle	2026-03-18T06:48:59.6238103Z Restored cache entry with key gradle-transforms-v1-d5b77c5723bf6c6228af6de63586f367 to /home/runner/.gradle/caches/transforms-4/*/,/home/runner/.gradle/caches/*/transforms/*/ in 6180ms
+Build & Test	Setup Gradle	2026-03-18T06:48:59.6310287Z ##[endgroup]
+Build & Test	Setup Gradle	2026-03-18T06:48:59.7827624Z Fetched 10 of 33 checksums
+Build & Test	Setup Gradle	2026-03-18T06:48:59.9657388Z Fetched 20 of 33 checksums
+Build & Test	Setup Gradle	2026-03-18T06:49:00.2339994Z Fetched 30 of 33 checksums
+Build & Test	Setup Gradle	2026-03-18T06:49:00.2933450Z Fetched 33 of 33 checksums
+Build & Test	Setup Gradle	2026-03-18T06:49:00.2935990Z ##[group]All Gradle Wrapper jars are valid
+Build & Test	Setup Gradle	2026-03-18T06:49:00.2937482Z G£ô Found known Gradle Wrapper JAR files:
+Build & Test	Setup Gradle	2026-03-18T06:49:00.2938680Z   7ef3d73bd95c047814d76ec8324f72deefb96593eb9ce87aa06ecdcdaba7ffe8 gradle/wrapper/gradle-wrapper.jar
+Build & Test	Setup Gradle	2026-03-18T06:49:00.2940201Z ##[endgroup]
+Build & Test	Create local.properties	n++2026-03-18T06:49:00.3118743Z ##[group]Run echo "ETHERSCAN_API_KEY=" >> local.properties
+Build & Test	Create local.properties	2026-03-18T06:49:00.3119785Z [36;1mecho "ETHERSCAN_API_KEY=" >> local.properties[0m
+Build & Test	Create local.properties	2026-03-18T06:49:00.3120209Z [36;1mecho "COINGECKO_API_KEY=" >> local.properties[0m
+Build & Test	Create local.properties	2026-03-18T06:49:00.3171243Z shell: /usr/bin/bash -e {0}
+Build & Test	Create local.properties	2026-03-18T06:49:00.3171534Z env:
+Build & Test	Create local.properties	2026-03-18T06:49:00.3190519Z   JAVA_VERSION: 17
+Build & Test	Create local.properties	2026-03-18T06:49:00.3190838Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Create local.properties	2026-03-18T06:49:00.3191254Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Create local.properties	2026-03-18T06:49:00.3191801Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Create local.properties	2026-03-18T06:49:00.3192255Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+Build & Test	Create local.properties	2026-03-18T06:49:00.3192601Z   GRADLE_USER_HOME: /home/runner/.gradle
+Build & Test	Create local.properties	2026-03-18T06:49:00.3192913Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+Build & Test	Create local.properties	2026-03-18T06:49:00.3193410Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+Build & Test	Create local.properties	2026-03-18T06:49:00.3193891Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+Build & Test	Create local.properties	2026-03-18T06:49:00.3194461Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+Build & Test	Create local.properties	2026-03-18T06:49:00.3194814Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+Build & Test	Create local.properties	2026-03-18T06:49:00.3195100Z ##[endgroup]
+Build & Test	Run lint	n++2026-03-18T06:49:00.3315172Z ##[group]Run ./gradlew lint --continue
+Build & Test	Run lint	2026-03-18T06:49:00.3315550Z [36;1m./gradlew lint --continue[0m
+Build & Test	Run lint	2026-03-18T06:49:00.3360164Z shell: /usr/bin/bash -e {0}
+Build & Test	Run lint	2026-03-18T06:49:00.3360439Z env:
+Build & Test	Run lint	2026-03-18T06:49:00.3360639Z   JAVA_VERSION: 17
+Build & Test	Run lint	2026-03-18T06:49:00.3360883Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Run lint	2026-03-18T06:49:00.3361271Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Run lint	2026-03-18T06:49:00.3361803Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Run lint	2026-03-18T06:49:00.3362260Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+Build & Test	Run lint	2026-03-18T06:49:00.3362589Z   GRADLE_USER_HOME: /home/runner/.gradle
+Build & Test	Run lint	2026-03-18T06:49:00.3362905Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+Build & Test	Run lint	2026-03-18T06:49:00.3363570Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+Build & Test	Run lint	2026-03-18T06:49:00.3364065Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+Build & Test	Run lint	2026-03-18T06:49:00.3364600Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+Build & Test	Run lint	2026-03-18T06:49:00.3364985Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+Build & Test	Run lint	2026-03-18T06:49:00.3365281Z ##[endgroup]
+Build & Test	Run lint	2026-03-18T06:49:01.8382842Z Starting a Gradle Daemon (subsequent builds will be faster)
+Build & Test	Run lint	2026-03-18T06:49:20.1404871Z > Task :core:crypto:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:20.1413083Z > Task :core:crypto:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:20.3379156Z > Task :core:crypto:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:20.3384399Z > Task :core:crypto:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:20.3397515Z > Task :core:crypto:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:20.3402400Z > Task :core:crypto:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:20.3403924Z > Task :core:crypto:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:20.3407172Z > Task :core:crypto:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:20.3408119Z > Task :core:crypto:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:20.3414322Z > Task :core:crypto:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:21.3394199Z > Task :core:crypto:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:21.3401423Z > Task :core:crypto:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:21.3402020Z > Task :core:crypto:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:21.3402632Z > Task :core:crypto:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:21.3403517Z > Task :core:crypto:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:21.3404119Z > Task :core:crypto:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:21.3404680Z > Task :core:crypto:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:21.4393634Z > Task :core:crypto:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:21.4394352Z > Task :core:keystore:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:21.4394972Z > Task :core:keystore:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:21.4395602Z > Task :core:crypto:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:21.4396228Z > Task :core:crypto:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:21.4396845Z > Task :core:keystore:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:21.4397511Z > Task :core:keystore:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:21.4398247Z > Task :core:keystore:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:21.4419279Z > Task :core:keystore:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:21.4420223Z > Task :core:keystore:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:21.4420921Z > Task :core:keystore:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:21.4421527Z > Task :core:keystore:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:21.5396217Z > Task :core:keystore:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:21.5403935Z > Task :core:crypto:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:21.5425032Z > Task :core:crypto:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:21.5432790Z > Task :core:keystore:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:22.0418622Z > Task :core:keystore:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:22.0419676Z > Task :core:keystore:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:22.0420459Z > Task :core:keystore:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:23.1379070Z > Task :core:keystore:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:23.1434572Z > Task :core:keystore:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:23.1436302Z > Task :core:keystore:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:23.1437498Z > Task :core:keystore:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:23.1438365Z > Task :core:keystore:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:23.2400933Z > Task :core:keystore:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:23.2402167Z > Task :core:keystore:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:23.2403040Z > Task :core:security:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:23.2404139Z > Task :core:security:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:23.2404971Z > Task :core:keystore:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:23.2405801Z > Task :core:security:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:23.2406674Z > Task :core:security:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:23.2407961Z > Task :core:security:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:23.2409020Z > Task :core:security:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:23.2410144Z > Task :core:security:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:23.2410958Z > Task :core:security:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:23.2411731Z > Task :core:security:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:23.3402533Z > Task :core:security:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:23.3434500Z > Task :core:security:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:23.3436624Z > Task :core:security:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:23.3437491Z > Task :core:security:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:23.4385386Z > Task :core:security:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:23.4398832Z > Task :core:security:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:23.4399927Z > Task :core:security:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:23.4424834Z > Task :core:security:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:23.4425492Z > Task :core:security:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:23.6428538Z > Task :core:security:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:23.6442902Z > Task :core:security:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:23.7385301Z > Task :core:security:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:23.7386217Z > Task :core:security:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:23.7386931Z > Task :data:network:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:23.7387608Z > Task :data:network:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:23.7388321Z > Task :data:network:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:23.7389071Z > Task :data:network:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:23.7389855Z > Task :data:network:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:23.7390680Z > Task :data:network:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:23.7391630Z > Task :data:network:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:23.7392498Z > Task :data:network:generateDebugBuildConfig
+Build & Test	Run lint	2026-03-18T06:49:23.7393179Z > Task :data:network:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:23.7394033Z > Task :data:network:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:23.8381192Z > Task :data:network:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:23.8389549Z > Task :data:network:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:23.8398074Z > Task :data:network:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:23.8428416Z > Task :domain:model:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:23.8432407Z > Task :domain:model:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:23.8433420Z > Task :domain:model:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:23.8434026Z > Task :domain:model:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:23.8434575Z > Task :domain:model:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:23.8435156Z > Task :domain:model:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:23.8435782Z > Task :domain:model:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:23.8436400Z > Task :domain:model:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:27.9426804Z > Task :core:security:kspDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:28.1378872Z > Task :core:keystore:kspDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:29.6381495Z > Task :core:security:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:29.6395126Z > Task :domain:model:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:29.6397828Z > Task :core:crypto:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:30.4378299Z > Task :core:keystore:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:30.6381898Z > Task :core:security:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:49:30.6387271Z > Task :core:crypto:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:49:30.6392731Z > Task :core:crypto:compileDebugJavaWithJavac NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:30.6394112Z > Task :core:crypto:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:30.6395153Z > Task :core:crypto:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:30.6396060Z > Task :core:crypto:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:49:30.6396715Z > Task :core:keystore:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:49:30.8382342Z > Task :core:crypto:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:49:31.1378135Z > Task :core:keystore:compileDebugJavaWithJavac
+Build & Test	Run lint	2026-03-18T06:49:31.2408072Z > Task :core:crypto:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:49:31.2426790Z > Task :core:crypto:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:49:31.3377923Z > Task :core:keystore:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:49:31.3385236Z > Task :core:keystore:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:49:31.3390165Z > Task :core:keystore:transformDebugClassesWithAsm
+Build & Test	Run lint	2026-03-18T06:49:31.4402165Z > Task :core:security:compileDebugJavaWithJavac
+Build & Test	Run lint	2026-03-18T06:49:31.4402925Z > Task :core:keystore:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:31.4403812Z > Task :core:keystore:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:31.5384278Z > Task :core:keystore:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:49:31.5402766Z > Task :core:keystore:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:49:31.5403629Z > Task :core:security:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:49:31.5404206Z > Task :core:security:transformDebugClassesWithAsm
+Build & Test	Run lint	2026-03-18T06:49:31.5404839Z > Task :core:security:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:31.5405527Z > Task :core:security:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:49:31.5406134Z > Task :core:security:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:31.5406624Z > Task :core:security:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:49:31.5407170Z > Task :core:security:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:49:31.5407771Z > Task :domain:model:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:31.5408338Z > Task :data:network:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:31.5408996Z > Task :domain:model:compileDebugJavaWithJavac NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:31.6378591Z > Task :domain:model:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:31.6379754Z > Task :data:network:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:31.6380389Z > Task :domain:model:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:31.8384137Z > Task :data:network:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:31.8385240Z > Task :data:network:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:31.8386120Z > Task :data:network:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:31.8386982Z > Task :data:network:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:31.8387921Z > Task :data:network:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:31.8388635Z > Task :data:network:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:31.8389278Z > Task :data:repository:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:31.8389919Z > Task :data:repository:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:31.8390568Z > Task :data:network:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:31.8391157Z > Task :data:network:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:31.8391769Z > Task :data:repository:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:31.8392437Z > Task :data:repository:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:31.8393173Z > Task :data:repository:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:31.8394150Z > Task :data:repository:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:31.9390385Z > Task :core:crypto:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:31.9391114Z > Task :data:localdb:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:31.9391725Z > Task :data:localdb:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:31.9392403Z > Task :core:keystore:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:31.9393017Z > Task :data:localdb:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:31.9393830Z > Task :data:localdb:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:31.9394425Z > Task :data:localdb:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:31.9395553Z > Task :data:localdb:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:31.9464221Z > Task :data:localdb:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:32.0382187Z > Task :data:repository:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:32.0383141Z > Task :data:repository:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:32.0383956Z > Task :data:localdb:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:32.0384540Z > Task :data:localdb:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:32.0385132Z > Task :data:repository:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:32.3380185Z > Task :data:repository:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:32.3380905Z > Task :domain:usecase:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:32.3381559Z > Task :domain:usecase:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:32.3382570Z > Task :domain:usecase:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:32.3383437Z > Task :domain:usecase:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:32.3384096Z > Task :data:repository:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:32.4380273Z > Task :domain:usecase:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:32.4401132Z > Task :data:repository:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:32.4401907Z > Task :domain:usecase:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:32.4402597Z > Task :core:crypto:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:32.4403463Z > Task :core:keystore:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:32.4404260Z > Task :domain:usecase:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:32.5378852Z > Task :domain:usecase:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:32.5398381Z > Task :domain:usecase:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:32.9384455Z > Task :data:repository:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:32.9437490Z > Task :data:repository:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:32.9473197Z > Task :data:repository:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:32.9474125Z > Task :data:repository:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:32.9474868Z > Task :data:repository:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:33.0427613Z > Task :data:repository:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:33.0428490Z > Task :data:repository:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:33.0429210Z > Task :data:repository:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:33.0429950Z > Task :data:repository:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:33.0430651Z > Task :data:repository:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:33.1410562Z > Task :data:localdb:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:33.1413946Z > Task :data:localdb:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:33.1414642Z > Task :data:localdb:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:33.1415348Z > Task :data:localdb:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:33.1416017Z > Task :data:localdb:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:33.1416679Z > Task :data:localdb:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:33.1417254Z > Task :data:localdb:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:33.1417915Z > Task :data:localdb:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:33.1418543Z > Task :data:localdb:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:33.1419126Z > Task :data:localdb:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:33.1419674Z > Task :data:localdb:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:33.2406529Z > Task :data:localdb:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:33.2407339Z > Task :data:localdb:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:33.2446811Z > Task :domain:model:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:33.2447759Z > Task :domain:model:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:33.2448578Z > Task :domain:model:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:33.2449401Z > Task :domain:model:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:33.2450108Z > Task :domain:model:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:49:33.2450800Z > Task :domain:model:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:33.2451531Z > Task :domain:model:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:33.2452354Z > Task :domain:model:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:33.3387730Z > Task :domain:model:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:33.3389056Z > Task :domain:model:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:33.3389868Z > Task :domain:model:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:33.3412624Z > Task :domain:model:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:33.3413639Z > Task :domain:model:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:33.3414446Z > Task :domain:model:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:33.3415260Z > Task :domain:model:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:33.3415976Z > Task :domain:model:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:49:33.4377641Z > Task :domain:model:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:49:33.4378572Z > Task :domain:model:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:49:33.4379264Z > Task :domain:model:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:33.5394075Z > Task :domain:model:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:49:33.5394805Z > Task :domain:usecase:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:33.5395474Z > Task :domain:usecase:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:33.5396177Z > Task :domain:usecase:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:33.5396941Z > Task :domain:usecase:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:33.5397676Z > Task :domain:usecase:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:33.5398301Z > Task :domain:usecase:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:33.5398926Z > Task :domain:usecase:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:33.5399605Z > Task :domain:usecase:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:33.5400240Z > Task :domain:usecase:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:33.5400841Z > Task :domain:usecase:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:33.5401461Z > Task :domain:usecase:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:33.6395621Z > Task :domain:usecase:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:33.6396597Z > Task :domain:usecase:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:33.6397390Z > Task :feature:onboarding:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:33.6398161Z > Task :feature:onboarding:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:33.6398968Z > Task :feature:onboarding:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:33.6399823Z > Task :feature:onboarding:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:33.6400698Z > Task :feature:onboarding:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:33.6401621Z > Task :feature:onboarding:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:33.6402695Z > Task :feature:onboarding:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:33.6404008Z > Task :feature:onboarding:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:33.6404804Z > Task :feature:onboarding:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:33.7397079Z > Task :feature:onboarding:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:33.7397900Z > Task :feature:onboarding:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:33.7398578Z > Task :feature:onboarding:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:33.7399682Z > Task :ui:frost-components:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:33.7400704Z > Task :ui:frost-components:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:33.7401504Z > Task :ui:frost-components:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:33.7402332Z > Task :ui:frost-components:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:33.8377313Z > Task :ui:frost-components:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:33.9406326Z > Task :ui:frost-components:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:34.0392609Z > Task :ui:frost-components:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:34.0452426Z > Task :ui:frost-components:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:34.0453562Z > Task :ui:theme:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:34.0454259Z > Task :ui:theme:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:34.0454829Z > Task :ui:theme:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:34.0455408Z > Task :ui:theme:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:34.0455952Z > Task :ui:theme:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:34.1431536Z > Task :ui:theme:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:34.1432448Z > Task :ui:theme:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:34.1433177Z > Task :ui:theme:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:34.9378265Z > Task :domain:usecase:kspDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:35.0404397Z > Task :data:network:kspDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:36.4398206Z > Task :domain:usecase:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:37.0385278Z 
+Build & Test	Run lint	2026-03-18T06:49:37.0414276Z > Task :ui:theme:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:37.0427059Z w: file:///home/runner/work/TranzoWallet/TranzoWallet/ui/theme/src/main/java/com/tranzo/wallet/ui/theme/Theme.kt:39:20 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+Build & Test	Run lint	2026-03-18T06:49:37.0430312Z w: file:///home/runner/work/TranzoWallet/TranzoWallet/ui/theme/src/main/java/com/tranzo/wallet/ui/theme/Theme.kt:40:20 'var navigationBarColor: Int' is deprecated. Deprecated in Java.
+Build & Test	Run lint	2026-03-18T06:49:37.1381427Z 
+Build & Test	Run lint	2026-03-18T06:49:37.1387840Z > Task :domain:usecase:compileDebugJavaWithJavac
+Build & Test	Run lint	2026-03-18T06:49:37.1404962Z > Task :domain:usecase:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:49:37.2377724Z > Task :domain:usecase:transformDebugClassesWithAsm
+Build & Test	Run lint	2026-03-18T06:49:37.2389045Z > Task :domain:usecase:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:49:37.2395136Z > Task :domain:usecase:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:37.2426165Z > Task :domain:usecase:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:37.2445128Z > Task :domain:usecase:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:37.2448758Z > Task :domain:usecase:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:37.2452542Z > Task :ui:theme:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:37.2455014Z > Task :domain:usecase:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:49:37.3379203Z > Task :domain:usecase:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:49:37.3384460Z > Task :domain:usecase:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:49:37.3387252Z > Task :ui:theme:compileDebugJavaWithJavac NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:37.3390372Z > Task :ui:theme:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:37.3392904Z > Task :ui:frost-components:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:37.7379502Z > Task :feature:onboarding:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:37.7380776Z > Task :feature:onboarding:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:37.7381847Z > Task :ui:theme:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:37.7382783Z > Task :feature:onboarding:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:37.7383655Z > Task :feature:onboarding:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:37.7384383Z > Task :feature:onboarding:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:37.7385038Z > Task :feature:onboarding:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:37.7385664Z > Task :feature:onboarding:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:37.7386298Z > Task :feature:onboarding:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:37.8379623Z > Task :feature:onboarding:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:37.8380410Z > Task :feature:onboarding:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:37.8381030Z > Task :feature:wallet:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:37.8381687Z > Task :feature:wallet:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:37.8382307Z > Task :feature:wallet:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:37.8382970Z > Task :feature:wallet:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:37.8383936Z > Task :feature:wallet:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:37.8384696Z > Task :feature:wallet:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:37.8385592Z > Task :feature:wallet:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:37.8386409Z > Task :feature:wallet:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:37.8387004Z > Task :feature:wallet:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:37.8387643Z > Task :feature:wallet:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:37.9397827Z > Task :feature:wallet:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:37.9398588Z > Task :feature:wallet:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:37.9399239Z > Task :feature:wallet:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:37.9399950Z > Task :feature:wallet:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:37.9400564Z > Task :feature:wallet:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:37.9401209Z > Task :feature:wallet:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:37.9401938Z > Task :feature:wallet:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:38.0378830Z > Task :feature:wallet:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:38.0379493Z > Task :feature:wallet:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:38.0380104Z > Task :feature:wallet:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:38.0380667Z > Task :feature:wallet:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:38.0381200Z > Task :feature:wallet:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:38.0381807Z > Task :feature:tokens:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:38.0382410Z > Task :feature:tokens:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:38.0382958Z > Task :data:localdb:kspDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:38.1380957Z > Task :feature:tokens:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:38.2403449Z > Task :feature:tokens:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:38.2422375Z > Task :feature:tokens:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:38.2423156Z > Task :feature:tokens:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:38.2424212Z > Task :feature:tokens:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:38.2425032Z > Task :feature:tokens:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:38.2425614Z > Task :feature:tokens:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:38.2426196Z > Task :feature:tokens:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:38.2426794Z > Task :feature:tokens:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:38.3408678Z > Task :feature:tokens:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:38.3409667Z > Task :feature:tokens:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:38.3410481Z > Task :feature:tokens:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:38.3411203Z > Task :feature:tokens:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:38.3411952Z > Task :feature:tokens:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:38.3412819Z > Task :feature:tokens:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:38.4376752Z > Task :feature:tokens:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:38.4377665Z > Task :feature:tokens:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:38.4378303Z > Task :feature:tokens:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:38.4379070Z > Task :feature:tokens:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:38.4379812Z > Task :feature:tokens:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:38.4384641Z > Task :feature:nft:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:38.4392401Z > Task :feature:nft:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:38.4393742Z > Task :feature:nft:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:38.4396183Z > Task :feature:nft:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:38.4398426Z > Task :feature:nft:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:38.5408066Z > Task :feature:nft:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:38.5409633Z > Task :feature:nft:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:38.5410744Z > Task :feature:nft:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:38.5411489Z > Task :data:network:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:38.5412224Z > Task :feature:nft:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:38.5413021Z > Task :data:network:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:49:39.1408824Z > Task :data:network:compileDebugJavaWithJavac
+Build & Test	Run lint	2026-03-18T06:49:39.2378618Z > Task :data:network:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:49:39.2384295Z > Task :data:network:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:49:39.2385305Z > Task :feature:nft:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:39.3407983Z > Task :data:network:transformDebugClassesWithAsm
+Build & Test	Run lint	2026-03-18T06:49:39.3409184Z > Task :data:network:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:39.3410112Z > Task :feature:nft:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:39.3411085Z > Task :data:network:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:39.3411979Z > Task :data:network:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:49:39.4387778Z > Task :data:network:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:49:39.4388824Z > Task :data:network:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:39.4389966Z > Task :data:network:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:39.4390903Z > Task :feature:nft:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:39.4391981Z > Task :feature:nft:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:39.5436262Z > Task :feature:nft:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:39.5439320Z > Task :feature:nft:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:39.5440192Z > Task :feature:nft:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:39.5441182Z > Task :feature:nft:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:39.5442005Z > Task :feature:nft:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:39.5442768Z > Task :feature:nft:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:39.5443753Z > Task :feature:nft:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:39.5444537Z > Task :feature:nft:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:39.5445556Z > Task :feature:settings:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:39.5446398Z > Task :feature:settings:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:39.5447204Z > Task :feature:nft:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:39.5448353Z > Task :feature:settings:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:39.5449286Z > Task :feature:settings:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:39.5450274Z > Task :feature:settings:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:39.6381380Z > Task :feature:settings:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:39.6390606Z > Task :feature:settings:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:39.6391544Z > Task :core:security:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:39.6392221Z > Task :feature:settings:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:39.6392860Z > Task :feature:settings:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:39.6393676Z > Task :feature:settings:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:39.6394338Z > Task :feature:settings:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:39.6395024Z > Task :feature:settings:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:39.6395677Z > Task :core:security:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:39.6396315Z > Task :feature:settings:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:39.7403752Z > Task :feature:settings:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:39.7416674Z > Task :feature:settings:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:39.7417930Z > Task :feature:settings:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:39.7419687Z > Task :feature:settings:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:39.7421047Z > Task :feature:settings:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:39.7422271Z > Task :feature:settings:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:39.7423828Z > Task :feature:settings:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:39.7425145Z > Task :feature:settings:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:39.7426495Z > Task :feature:payments:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:39.7440165Z > Task :feature:settings:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:39.8420865Z > Task :feature:payments:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:39.8422031Z > Task :feature:payments:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:39.8423058Z > Task :feature:payments:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:39.8424331Z > Task :feature:payments:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:39.8425471Z > Task :feature:payments:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:39.8426539Z > Task :feature:payments:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:39.8427498Z > Task :feature:payments:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:39.8428455Z > Task :feature:payments:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:39.9414948Z > Task :feature:payments:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:39.9419915Z > Task :feature:payments:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:39.9420924Z > Task :feature:payments:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:39.9421851Z > Task :feature:payments:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:49:39.9422743Z > Task :feature:payments:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:39.9423911Z > Task :feature:payments:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:39.9424896Z > Task :feature:payments:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:39.9425847Z > Task :feature:payments:generateDebugRFile
+Build & Test	Run lint	2026-03-18T06:49:39.9426726Z > Task :feature:payments:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:39.9427582Z > Task :feature:payments:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:39.9428444Z > Task :feature:payments:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:40.0377250Z > Task :feature:payments:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:40.0379791Z > Task :feature:payments:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:40.0380726Z > Task :ui:frost-components:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:40.0386668Z > Task :ui:frost-components:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:40.0388067Z > Task :ui:frost-components:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:40.0389301Z > Task :ui:frost-components:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:40.0391553Z > Task :ui:frost-components:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:40.0392589Z > Task :ui:frost-components:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:40.0398598Z > Task :ui:frost-components:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:40.0402069Z > Task :ui:frost-components:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:40.0403418Z > Task :ui:frost-components:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:40.0405748Z > Task :ui:frost-components:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:40.0408136Z > Task :ui:frost-components:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:40.1411327Z > Task :ui:frost-components:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:40.1464365Z > Task :ui:frost-components:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:40.1465072Z > Task :ui:theme:mergeDebugJniLibFolders
+Build & Test	Run lint	2026-03-18T06:49:40.1465695Z > Task :ui:theme:mergeDebugNativeLibs NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:40.1466321Z > Task :ui:theme:stripDebugDebugSymbols NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:40.1466989Z > Task :ui:theme:copyDebugJniLibsProjectAndLocalJars
+Build & Test	Run lint	2026-03-18T06:49:40.1467596Z > Task :ui:theme:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:49:40.1468158Z > Task :ui:theme:extractDeepLinksForAarDebug
+Build & Test	Run lint	2026-03-18T06:49:40.1468767Z > Task :ui:theme:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:40.1469438Z > Task :ui:theme:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:40.1470023Z > Task :ui:theme:mergeDebugShaders
+Build & Test	Run lint	2026-03-18T06:49:40.1470568Z > Task :ui:theme:compileDebugShaders NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:40.1475734Z > Task :ui:theme:generateDebugAssets UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:40.1476343Z > Task :ui:theme:packageDebugAssets
+Build & Test	Run lint	2026-03-18T06:49:40.1476869Z > Task :ui:theme:prepareDebugArtProfile
+Build & Test	Run lint	2026-03-18T06:49:40.1477432Z > Task :ui:theme:prepareLintJarForPublish
+Build & Test	Run lint	2026-03-18T06:49:40.1477982Z > Task :ui:theme:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:49:40.1478499Z > Task :ui:theme:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:49:40.1479030Z > Task :ui:theme:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:49:40.1479571Z > Task :ui:theme:writeDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:40.1480085Z > Task :ui:theme:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:49:40.2407447Z > Task :ui:theme:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:49:40.2408290Z > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Build & Test	Run lint	2026-03-18T06:49:40.2409030Z > Task :app:preBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:40.2409526Z > Task :app:preDebugBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:49:40.2410059Z > Task :app:generateDebugBuildConfig
+Build & Test	Run lint	2026-03-18T06:49:40.7377009Z > Task :app:generateDebugResValues
+Build & Test	Run lint	2026-03-18T06:49:40.8376730Z > Task :data:localdb:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:40.8377582Z > Task :app:checkDebugAarMetadata
+Build & Test	Run lint	2026-03-18T06:49:40.8378189Z > Task :app:mapDebugSourceSetPaths
+Build & Test	Run lint	2026-03-18T06:49:41.6404515Z > Task :data:localdb:compileDebugJavaWithJavac
+Build & Test	Run lint	2026-03-18T06:49:41.7376888Z > Task :data:localdb:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:49:41.7377663Z > Task :data:localdb:transformDebugClassesWithAsm
+Build & Test	Run lint	2026-03-18T06:49:41.7378323Z > Task :data:localdb:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:49:41.7378962Z > Task :data:localdb:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:41.7379616Z > Task :data:localdb:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:41.7380327Z > Task :data:localdb:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:42.6424602Z > Task :data:localdb:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:42.6425578Z > Task :app:generateDebugResources
+Build & Test	Run lint	2026-03-18T06:49:42.6426255Z > Task :data:localdb:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:49:42.6426928Z > Task :data:localdb:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:49:42.6427580Z > Task :data:localdb:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:49:45.2376900Z > Task :data:repository:kspDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:46.3377394Z > Task :app:packageDebugResources
+Build & Test	Run lint	2026-03-18T06:49:46.3378581Z > Task :ui:frost-components:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:46.3379779Z > Task :ui:frost-components:compileDebugJavaWithJavac NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:49:46.4388385Z > Task :app:parseDebugLocalResources
+Build & Test	Run lint	2026-03-18T06:49:46.4395102Z > Task :ui:frost-components:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:46.4396135Z > Task :ui:frost-components:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:46.5382360Z > Task :app:mergeDebugResources
+Build & Test	Run lint	2026-03-18T06:49:48.6378056Z > Task :data:repository:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:48.6378817Z > Task :data:repository:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:49:49.3396017Z > Task :data:repository:compileDebugJavaWithJavac
+Build & Test	Run lint	2026-03-18T06:49:49.4406582Z > Task :data:repository:transformDebugClassesWithAsm
+Build & Test	Run lint	2026-03-18T06:49:49.4407870Z > Task :data:repository:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:49.4408936Z > Task :data:repository:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:49.4409924Z > Task :data:repository:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:49:49.4410791Z > Task :data:repository:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:49:49.5396935Z > Task :data:repository:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:49:49.5397664Z > Task :data:repository:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:49:49.5398327Z > Task :data:repository:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:50.2406029Z > Task :feature:nft:kspDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:50.2407138Z > Task :data:repository:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:49:50.6376741Z > Task :feature:settings:kspDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:50.9377220Z > Task :feature:onboarding:kspDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:53.5395995Z > Task :feature:tokens:kspDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:53.8376625Z > Task :feature:wallet:kspDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:54.4376832Z > Task :feature:nft:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:54.5376807Z > Task :feature:nft:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:49:55.7376799Z > Task :feature:nft:compileDebugJavaWithJavac
+Build & Test	Run lint	2026-03-18T06:49:55.9377968Z > Task :feature:nft:transformDebugClassesWithAsm
+Build & Test	Run lint	2026-03-18T06:49:55.9379155Z > Task :feature:nft:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:55.9379819Z 
+Build & Test	Run lint	2026-03-18T06:49:55.9386034Z > Task :feature:nft:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:55.9389088Z Supplied consumer proguard configuration does not exist: /home/runner/work/TranzoWallet/TranzoWallet/feature/nft/consumer-rules.pro
+Build & Test	Run lint	2026-03-18T06:49:55.9390525Z 
+Build & Test	Run lint	2026-03-18T06:49:55.9392466Z > Task :feature:nft:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:49:56.0389159Z > Task :feature:nft:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:49:56.0394406Z > Task :feature:nft:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:49:56.0395350Z > Task :feature:nft:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:49:58.7377606Z 
+Build & Test	Run lint	2026-03-18T06:49:58.7382840Z > Task :feature:tokens:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:58.7385627Z w: file:///home/runner/work/TranzoWallet/TranzoWallet/feature/tokens/src/main/java/com/tranzo/wallet/feature/tokens/TokenDetailScreen.kt:179:57 'val Icons.Filled.ShowChart: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ShowChart.
+Build & Test	Run lint	2026-03-18T06:49:58.8376908Z 
+Build & Test	Run lint	2026-03-18T06:49:58.8377902Z > Task :feature:tokens:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:49:58.9376944Z > Task :feature:onboarding:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:59.2405806Z > Task :feature:settings:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:49:59.3377131Z > Task :feature:tokens:compileDebugJavaWithJavac
+Build & Test	Run lint	2026-03-18T06:49:59.3378236Z > Task :feature:onboarding:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:49:59.7376996Z > Task :feature:onboarding:compileDebugJavaWithJavac
+Build & Test	Run lint	2026-03-18T06:49:59.7378174Z > Task :feature:onboarding:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:49:59.8376659Z > Task :feature:onboarding:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:49:59.8377623Z > Task :feature:tokens:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:49:59.8382425Z > Task :feature:tokens:transformDebugClassesWithAsm
+Build & Test	Run lint	2026-03-18T06:49:59.9404718Z > Task :feature:tokens:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:59.9406164Z > Task :feature:tokens:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:49:59.9406823Z 
+Build & Test	Run lint	2026-03-18T06:49:59.9407267Z > Task :feature:tokens:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:59.9408647Z Supplied consumer proguard configuration does not exist: /home/runner/work/TranzoWallet/TranzoWallet/feature/tokens/consumer-rules.pro
+Build & Test	Run lint	2026-03-18T06:49:59.9409739Z 
+Build & Test	Run lint	2026-03-18T06:49:59.9410216Z > Task :feature:onboarding:transformDebugClassesWithAsm
+Build & Test	Run lint	2026-03-18T06:49:59.9411153Z > Task :feature:tokens:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:49:59.9411956Z > Task :feature:onboarding:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:59.9412781Z 
+Build & Test	Run lint	2026-03-18T06:49:59.9413418Z > Task :feature:onboarding:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:49:59.9415281Z Supplied consumer proguard configuration does not exist: /home/runner/work/TranzoWallet/TranzoWallet/feature/onboarding/consumer-rules.pro
+Build & Test	Run lint	2026-03-18T06:50:00.0385742Z 
+Build & Test	Run lint	2026-03-18T06:50:00.0386702Z > Task :feature:onboarding:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:50:00.0387755Z > Task :feature:onboarding:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:50:00.0388794Z > Task :feature:tokens:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:50:00.1404911Z > Task :feature:settings:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:50:00.4377532Z > Task :feature:settings:compileDebugJavaWithJavac
+Build & Test	Run lint	2026-03-18T06:50:00.5377953Z > Task :feature:settings:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:50:00.5379281Z > Task :feature:settings:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:50:00.5380357Z > Task :feature:settings:transformDebugClassesWithAsm
+Build & Test	Run lint	2026-03-18T06:50:00.8434427Z > Task :feature:settings:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:00.8438243Z 
+Build & Test	Run lint	2026-03-18T06:50:00.8438948Z > Task :feature:settings:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:00.8440646Z Supplied consumer proguard configuration does not exist: /home/runner/work/TranzoWallet/TranzoWallet/feature/settings/consumer-rules.pro
+Build & Test	Run lint	2026-03-18T06:50:00.8442008Z 
+Build & Test	Run lint	2026-03-18T06:50:00.8442476Z > Task :feature:settings:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:50:00.8443637Z > Task :feature:settings:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:50:00.9378033Z > Task :ui:frost-components:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:50:00.9404222Z > Task :ui:frost-components:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:00.9405139Z 
+Build & Test	Run lint	2026-03-18T06:50:00.9405662Z > Task :ui:frost-components:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:00.9407215Z Supplied consumer proguard configuration does not exist: /home/runner/work/TranzoWallet/TranzoWallet/ui/frost-components/consumer-rules.pro
+Build & Test	Run lint	2026-03-18T06:50:00.9408459Z 
+Build & Test	Run lint	2026-03-18T06:50:00.9408886Z > Task :ui:frost-components:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:50:00.9409740Z > Task :app:createDebugCompatibleScreenManifests
+Build & Test	Run lint	2026-03-18T06:50:00.9410626Z > Task :ui:frost-components:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:50:01.0398757Z > Task :ui:frost-components:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:50:01.0403116Z > Task :ui:frost-components:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:50:01.0404297Z > Task :app:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.0405204Z > Task :core:crypto:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.0405990Z > Task :core:keystore:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.0406771Z > Task :core:security:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.0407536Z > Task :data:localdb:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.0408298Z > Task :data:network:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.0409067Z > Task :data:repository:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.0409827Z > Task :domain:model:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.0410613Z > Task :domain:usecase:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.0411422Z > Task :feature:nft:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.0412211Z > Task :feature:onboarding:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.1377738Z > Task :feature:payments:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.1378959Z > Task :feature:settings:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.1379812Z > Task :feature:tokens:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.1386450Z > Task :feature:wallet:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.1387956Z > Task :ui:frost-components:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.1388803Z > Task :ui:theme:extractDeepLinksDebug
+Build & Test	Run lint	2026-03-18T06:50:01.5377296Z > Task :app:processDebugMainManifest
+Build & Test	Run lint	2026-03-18T06:50:01.6385846Z > Task :app:processDebugManifest
+Build & Test	Run lint	2026-03-18T06:50:01.7377239Z > Task :app:processDebugManifestForPackage
+Build & Test	Run lint	2026-03-18T06:50:01.7382394Z > Task :core:crypto:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.7383543Z > Task :core:keystore:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.7388447Z > Task :core:security:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.7389381Z > Task :data:localdb:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.7390269Z > Task :feature:payments:kspDebugKotlin
+Build & Test	Run lint	2026-03-18T06:50:01.7397489Z > Task :data:network:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.8425308Z > Task :data:repository:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.8426434Z > Task :domain:model:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.8429318Z > Task :domain:usecase:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.8430003Z > Task :feature:nft:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.8430689Z > Task :feature:onboarding:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.9377298Z > Task :feature:payments:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.9378557Z > Task :feature:settings:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.9382462Z > Task :feature:tokens:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.9383617Z > Task :feature:wallet:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.9385206Z > Task :ui:frost-components:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:01.9385871Z > Task :ui:theme:compileDebugLibraryResources
+Build & Test	Run lint	2026-03-18T06:50:02.0376888Z > Task :feature:nft:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.2418798Z > Task :feature:onboarding:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.2419568Z > Task :feature:settings:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.2420246Z > Task :feature:tokens:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.3377067Z > Task :app:javaPreCompileDebug
+Build & Test	Run lint	2026-03-18T06:50:02.4464694Z > Task :feature:tokens:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.4465859Z > Task :feature:onboarding:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.4466822Z > Task :feature:settings:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.4467757Z > Task :feature:nft:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.5377177Z > Task :app:preDebugAndroidTestBuild SKIPPED
+Build & Test	Run lint	2026-03-18T06:50:02.5378313Z > Task :app:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:02.5379194Z > Task :core:crypto:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.5380155Z > Task :core:crypto:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.5381013Z > Task :core:keystore:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.5381896Z > Task :core:keystore:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.6396218Z > Task :core:security:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.6401626Z > Task :core:security:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.6406740Z > Task :data:localdb:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.6411716Z > Task :data:localdb:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.6417055Z > Task :data:network:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.6421192Z > Task :data:network:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.6426418Z > Task :data:repository:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.6431203Z > Task :data:repository:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.7404957Z > Task :domain:model:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.7476285Z > Task :domain:model:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.7477183Z > Task :domain:usecase:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.7477956Z > Task :domain:usecase:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.7478771Z > Task :feature:nft:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.7479616Z > Task :feature:nft:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.7480264Z > Task :feature:onboarding:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.7480874Z > Task :feature:onboarding:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.7482142Z > Task :feature:payments:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.8376834Z > Task :feature:settings:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.8378711Z > Task :feature:settings:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.8379341Z > Task :feature:tokens:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.8379916Z > Task :feature:tokens:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.8380528Z > Task :feature:wallet:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.8381165Z > Task :ui:frost-components:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.8381793Z > Task :ui:frost-components:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.8382382Z > Task :ui:theme:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:02.9376818Z > Task :ui:theme:writeDebugLintModelMetadata
+Build & Test	Run lint	2026-03-18T06:50:02.9382820Z > Task :app:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:02.9388795Z > Task :core:crypto:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:03.1376864Z > Task :core:crypto:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:03.1381975Z > Task :core:keystore:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:03.3383883Z > Task :app:processDebugResources
+Build & Test	Run lint	2026-03-18T06:50:03.3388863Z > Task :core:keystore:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:03.3393745Z > Task :core:security:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:03.5402916Z > Task :core:security:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:03.5405285Z > Task :data:localdb:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:03.5406249Z > Task :domain:model:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:03.5407513Z > Task :domain:model:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:03.6377115Z > Task :data:localdb:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:03.6382868Z > Task :data:network:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:03.7406239Z > Task :data:network:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:03.7434230Z > Task :data:repository:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:03.7435362Z > Task :domain:usecase:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:03.8377712Z > Task :domain:usecase:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:03.9377010Z > Task :data:repository:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:03.9424766Z > Task :feature:nft:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:03.9426638Z > Task :ui:frost-components:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:03.9428600Z > Task :ui:theme:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:04.1376951Z > Task :ui:theme:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:04.3377156Z > Task :ui:frost-components:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:04.5378949Z > Task :feature:nft:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:04.5380574Z > Task :feature:onboarding:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:04.6377231Z > Task :feature:onboarding:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:04.6377963Z > Task :feature:payments:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:04.6378578Z > Task :feature:settings:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:04.7416100Z > Task :feature:settings:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:04.7416872Z > Task :feature:tokens:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:04.8394434Z > Task :feature:tokens:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:04.8396345Z > Task :feature:wallet:extractProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:04.8397290Z > Task :app:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:05.2376234Z 
+Build & Test	Run lint	2026-03-18T06:50:05.2377155Z > Task :feature:wallet:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:50:05.2379695Z w: file:///home/runner/work/TranzoWallet/TranzoWallet/feature/wallet/src/main/java/com/tranzo/wallet/feature/wallet/WalletHomeScreen.kt:164:45 'val Icons.Filled.Send: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Send.
+Build & Test	Run lint	2026-03-18T06:50:05.4376650Z 
+Build & Test	Run lint	2026-03-18T06:50:05.4377586Z > Task :feature:wallet:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:50:05.5376612Z > Task :feature:payments:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:50:05.8377201Z > Task :feature:wallet:compileDebugJavaWithJavac
+Build & Test	Run lint	2026-03-18T06:50:05.8379780Z > Task :feature:wallet:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:50:05.8381907Z > Task :feature:wallet:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:50:05.9377078Z > Task :feature:payments:extractDebugAnnotations
+Build & Test	Run lint	2026-03-18T06:50:05.9378375Z > Task :feature:payments:compileDebugJavaWithJavac NO-SOURCE
+Build & Test	Run lint	2026-03-18T06:50:05.9379713Z > Task :feature:wallet:transformDebugClassesWithAsm
+Build & Test	Run lint	2026-03-18T06:50:05.9381222Z > Task :feature:wallet:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:05.9391248Z 
+Build & Test	Run lint	2026-03-18T06:50:05.9391599Z > Task :feature:wallet:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:05.9392873Z Supplied consumer proguard configuration does not exist: /home/runner/work/TranzoWallet/TranzoWallet/feature/wallet/consumer-rules.pro
+Build & Test	Run lint	2026-03-18T06:50:05.9394065Z 
+Build & Test	Run lint	2026-03-18T06:50:05.9394347Z > Task :feature:payments:transformDebugClassesWithAsm
+Build & Test	Run lint	2026-03-18T06:50:05.9394978Z > Task :feature:wallet:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:50:05.9395571Z > Task :feature:wallet:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:50:05.9396514Z > Task :feature:payments:mergeDebugGeneratedProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:05.9396993Z 
+Build & Test	Run lint	2026-03-18T06:50:05.9403029Z > Task :feature:payments:mergeDebugConsumerProguardFiles
+Build & Test	Run lint	2026-03-18T06:50:05.9404594Z Supplied consumer proguard configuration does not exist: /home/runner/work/TranzoWallet/TranzoWallet/feature/payments/consumer-rules.pro
+Build & Test	Run lint	2026-03-18T06:50:06.0377268Z 
+Build & Test	Run lint	2026-03-18T06:50:06.0382241Z > Task :feature:payments:processDebugJavaRes
+Build & Test	Run lint	2026-03-18T06:50:06.0400262Z > Task :feature:payments:mergeDebugJavaResource
+Build & Test	Run lint	2026-03-18T06:50:06.0401011Z > Task :feature:payments:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:50:06.0401644Z > Task :feature:payments:syncDebugLibJars
+Build & Test	Run lint	2026-03-18T06:50:06.0402242Z > Task :feature:payments:bundleDebugLocalLintAar
+Build & Test	Run lint	2026-03-18T06:50:06.0402870Z > Task :feature:wallet:bundleLibCompileToJarDebug
+Build & Test	Run lint	2026-03-18T06:50:06.0403711Z > Task :feature:wallet:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:50:06.3399215Z > Task :feature:payments:bundleLibRuntimeToJarDebug
+Build & Test	Run lint	2026-03-18T06:50:06.4377137Z > Task :feature:payments:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:06.4377914Z > Task :feature:wallet:createFullJarDebug
+Build & Test	Run lint	2026-03-18T06:50:06.5377234Z > Task :feature:payments:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:06.7376758Z > Task :feature:wallet:generateDebugLintModel
+Build & Test	Run lint	2026-03-18T06:50:09.1404699Z > Task :app:kspDebugKotlin
+Build & Test	Run lint	2026-03-18T06:50:12.1376852Z > Task :app:compileDebugKotlin
+Build & Test	Run lint	2026-03-18T06:50:12.7376718Z > Task :app:compileDebugJavaWithJavac
+Build & Test	Run lint	2026-03-18T06:50:13.2377065Z > Task :app:hiltAggregateDepsDebug
+Build & Test	Run lint	2026-03-18T06:50:20.6376885Z > Task :core:keystore:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:50:20.6377548Z > Task :core:security:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:50:22.1378194Z > Task :core:crypto:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:50:24.2376634Z > Task :app:hiltJavaCompileDebug
+Build & Test	Run lint	2026-03-18T06:50:24.2382088Z > Task :app:bundleDebugClassesToCompileJar
+Build & Test	Run lint	2026-03-18T06:50:24.4378340Z > Task :app:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:26.8377728Z > Task :app:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:26.9444261Z > Task :app:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.0407654Z > Task :core:crypto:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.1377362Z > Task :core:crypto:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:27.1378645Z > Task :core:crypto:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.1379672Z > Task :core:crypto:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.2376667Z > Task :core:crypto:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.2383154Z > Task :core:keystore:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.2388518Z > Task :core:keystore:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:27.2393844Z > Task :core:keystore:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.2398891Z > Task :core:keystore:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.3377196Z > Task :core:keystore:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.3382386Z > Task :core:security:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.3387968Z > Task :core:security:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:27.3389156Z > Task :core:security:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.3390224Z > Task :core:security:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.4405701Z > Task :core:security:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.4407641Z > Task :data:localdb:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.4408835Z > Task :data:localdb:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:27.5377503Z > Task :data:localdb:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.5378693Z > Task :data:localdb:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.5379511Z > Task :data:localdb:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.5380327Z > Task :data:network:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.5381147Z > Task :data:network:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:27.6414737Z > Task :data:network:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.6444068Z > Task :data:network:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.6445350Z > Task :data:network:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.6446218Z > Task :data:repository:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.6447122Z > Task :data:repository:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:27.7377457Z > Task :data:repository:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.7378757Z > Task :data:repository:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.8377377Z > Task :data:repository:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.8383142Z > Task :domain:model:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.8384582Z > Task :domain:model:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:27.8385435Z > Task :domain:model:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.8386252Z > Task :domain:model:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.9392295Z > Task :domain:model:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.9398018Z > Task :domain:usecase:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:27.9403403Z > Task :domain:usecase:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:27.9408594Z > Task :domain:usecase:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:27.9414126Z > Task :domain:usecase:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:28.0379444Z > Task :domain:usecase:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:28.0380484Z > Task :feature:nft:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:28.0381464Z > Task :feature:nft:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:28.1405989Z > Task :feature:nft:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:28.1411151Z > Task :feature:nft:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:28.1416994Z > Task :feature:nft:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:28.1420486Z > Task :feature:onboarding:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:28.1424181Z > Task :feature:onboarding:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:28.3377235Z > Task :feature:onboarding:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:28.3382501Z > Task :feature:onboarding:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:28.3387889Z > Task :feature:onboarding:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:28.3390542Z > Task :feature:payments:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:28.3392795Z > Task :feature:payments:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:28.4376912Z > Task :feature:payments:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:28.4378260Z > Task :feature:payments:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:28.5377480Z > Task :feature:payments:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:28.5383475Z > Task :feature:settings:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:28.5388412Z > Task :feature:settings:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:28.7376943Z > Task :feature:settings:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:28.7383788Z > Task :feature:settings:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:28.8377040Z > Task :feature:settings:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:28.8378313Z > Task :feature:tokens:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:28.8395161Z > Task :feature:tokens:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:28.9380343Z > Task :feature:tokens:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:29.0404848Z > Task :feature:tokens:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:29.1386481Z > Task :feature:tokens:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:29.1387837Z > Task :feature:wallet:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:29.1388876Z > Task :feature:wallet:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:29.1390042Z > Task :feature:wallet:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:29.1391074Z > Task :feature:wallet:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:29.3376815Z > Task :feature:wallet:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:29.3384344Z > Task :ui:frost-components:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:29.3389767Z > Task :ui:frost-components:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:29.3395428Z > Task :ui:frost-components:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:29.3400245Z > Task :ui:frost-components:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:29.3402562Z > Task :ui:frost-components:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:29.3406094Z > Task :ui:theme:preDebugAndroidTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:29.3407170Z > Task :ui:theme:generateDebugAndroidTestResValues
+Build & Test	Run lint	2026-03-18T06:50:29.4396375Z > Task :ui:theme:generateDebugAndroidTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:29.4414399Z > Task :ui:theme:preDebugUnitTestBuild UP-TO-DATE
+Build & Test	Run lint	2026-03-18T06:50:29.4415414Z > Task :ui:theme:generateDebugUnitTestLintModel
+Build & Test	Run lint	2026-03-18T06:50:29.4416197Z > Task :core:crypto:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.4416880Z > Task :core:keystore:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.5377606Z > Task :core:security:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.5378808Z > Task :data:localdb:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.5379671Z > Task :data:network:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.5380341Z > Task :data:repository:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.5380997Z > Task :domain:model:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.6416195Z > Task :domain:usecase:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.6416993Z > Task :feature:nft:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.7416292Z > Task :feature:onboarding:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.7417304Z > Task :feature:payments:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.7418158Z > Task :feature:settings:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.8376959Z > Task :feature:tokens:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.8404160Z > Task :feature:wallet:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.8404940Z > Task :ui:frost-components:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:29.9376985Z > Task :ui:theme:generateDebugLintReportModel
+Build & Test	Run lint	2026-03-18T06:50:30.6376653Z > Task :domain:model:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:50:33.8376700Z > Task :data:localdb:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:50:34.5376955Z > Task :app:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:37.0376734Z > Task :ui:theme:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:50:38.1376706Z > Task :domain:usecase:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:50:38.3376679Z > Task :data:network:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:50:40.8376863Z > Task :app:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:41.2390630Z > Task :core:crypto:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:42.2376945Z > Task :core:crypto:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:42.6376817Z > Task :core:keystore:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:43.0376724Z > Task :core:keystore:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:43.4376861Z > Task :core:security:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:43.8376842Z > Task :core:security:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:44.1396617Z > Task :data:repository:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:50:44.2383903Z > Task :data:localdb:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:44.7376933Z > Task :data:localdb:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:44.7378125Z > Task :data:network:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:45.3376802Z > Task :data:repository:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:45.3378368Z > Task :data:network:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:45.8376860Z > Task :domain:model:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:45.9386679Z > Task :data:repository:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:46.1376611Z > Task :domain:model:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:46.4376659Z > Task :domain:usecase:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:46.5405683Z > Task :domain:usecase:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:47.1394453Z > Task :feature:nft:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:47.1423668Z > Task :feature:nft:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:47.7376753Z > Task :feature:onboarding:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:47.8376666Z > Task :feature:onboarding:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:48.1382866Z > Task :feature:payments:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:48.3377971Z > Task :feature:payments:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:48.5378369Z > Task :feature:settings:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:48.9405686Z > Task :feature:settings:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:49.1405692Z > Task :feature:tokens:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:49.8376711Z > Task :feature:tokens:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:50.1376904Z > Task :feature:wallet:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:50.5376740Z > Task :feature:wallet:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:50.7405814Z > Task :ui:frost-components:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:51.1377243Z > Task :ui:frost-components:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:51.1378299Z > Task :ui:theme:lintAnalyzeDebugAndroidTest
+Build & Test	Run lint	2026-03-18T06:50:51.2400790Z > Task :core:crypto:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:50:51.2405173Z > Task :core:crypto:lintDebug
+Build & Test	Run lint	2026-03-18T06:50:51.2405997Z > Task :core:crypto:lint
+Build & Test	Run lint	2026-03-18T06:50:51.4406127Z > Task :core:keystore:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:50:51.4407188Z > Task :core:keystore:lintDebug
+Build & Test	Run lint	2026-03-18T06:50:51.4407845Z > Task :core:keystore:lint
+Build & Test	Run lint	2026-03-18T06:50:51.4408499Z > Task :core:security:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:50:51.4409231Z > Task :core:security:lintDebug
+Build & Test	Run lint	2026-03-18T06:50:51.4409862Z > Task :core:security:lint
+Build & Test	Run lint	2026-03-18T06:50:51.5377253Z > Task :ui:theme:lintAnalyzeDebugUnitTest
+Build & Test	Run lint	2026-03-18T06:50:51.5382839Z > Task :data:network:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:50:51.5388041Z > Task :data:network:lintDebug
+Build & Test	Run lint	2026-03-18T06:50:51.5393016Z > Task :data:network:lint
+Build & Test	Run lint	2026-03-18T06:50:51.6377059Z > Task :data:localdb:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:50:51.6379783Z > Task :data:localdb:lintDebug
+Build & Test	Run lint	2026-03-18T06:50:51.6381805Z > Task :data:localdb:lint
+Build & Test	Run lint	2026-03-18T06:50:51.6383112Z > Task :domain:model:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:50:51.6384154Z > Task :domain:model:lintDebug
+Build & Test	Run lint	2026-03-18T06:50:51.6384869Z > Task :domain:model:lint
+Build & Test	Run lint	2026-03-18T06:50:51.6385402Z > Task :domain:usecase:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:50:51.6385930Z > Task :domain:usecase:lintDebug
+Build & Test	Run lint	2026-03-18T06:50:51.7404972Z > Task :domain:usecase:lint
+Build & Test	Run lint	2026-03-18T06:50:51.7405687Z > Task :data:repository:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:50:51.7406347Z > Task :data:repository:lintDebug
+Build & Test	Run lint	2026-03-18T06:50:51.7406849Z > Task :data:repository:lint
+Build & Test	Run lint	2026-03-18T06:50:51.8377041Z 
+Build & Test	Run lint	2026-03-18T06:50:51.8378306Z > Task :ui:theme:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:50:51.8395031Z Wrote HTML report to file:///home/runner/work/TranzoWallet/TranzoWallet/ui/theme/build/reports/lint-results-debug.html
+Build & Test	Run lint	2026-03-18T06:50:51.8395984Z 
+Build & Test	Run lint	2026-03-18T06:50:51.8396180Z > Task :ui:theme:lintDebug
+Build & Test	Run lint	2026-03-18T06:50:51.8396632Z > Task :ui:theme:lint
+Build & Test	Run lint	2026-03-18T06:50:52.1384692Z > Task :ui:frost-components:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:51:01.6376706Z > Task :feature:nft:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:51:04.1376617Z > Task :feature:payments:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:51:07.5376655Z > Task :feature:onboarding:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:51:10.2406049Z > Task :feature:settings:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:51:10.3376866Z > Task :feature:nft:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:51:10.3381498Z > Task :feature:nft:lintDebug
+Build & Test	Run lint	2026-03-18T06:51:10.3382050Z > Task :feature:nft:lint
+Build & Test	Run lint	2026-03-18T06:51:10.5376605Z > Task :feature:onboarding:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:51:10.5377548Z > Task :feature:onboarding:lintDebug
+Build & Test	Run lint	2026-03-18T06:51:10.5378258Z > Task :feature:onboarding:lint
+Build & Test	Run lint	2026-03-18T06:51:10.6382503Z > Task :feature:payments:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:51:10.6383160Z > Task :feature:payments:lintDebug
+Build & Test	Run lint	2026-03-18T06:51:10.6383860Z > Task :feature:payments:lint
+Build & Test	Run lint	2026-03-18T06:51:10.6384609Z > Task :feature:settings:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:51:10.6385147Z > Task :feature:settings:lintDebug
+Build & Test	Run lint	2026-03-18T06:51:10.6385625Z > Task :feature:settings:lint
+Build & Test	Run lint	2026-03-18T06:51:10.8405509Z 
+Build & Test	Run lint	2026-03-18T06:51:10.8406477Z > Task :ui:frost-components:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:51:10.8407909Z Wrote HTML report to file:///home/runner/work/TranzoWallet/TranzoWallet/ui/frost-components/build/reports/lint-results-debug.html
+Build & Test	Run lint	2026-03-18T06:51:10.8411290Z 
+Build & Test	Run lint	2026-03-18T06:51:10.8411789Z > Task :ui:frost-components:lintDebug
+Build & Test	Run lint	2026-03-18T06:51:10.8412478Z > Task :ui:frost-components:lint
+Build & Test	Run lint	2026-03-18T06:51:13.9376500Z > Task :feature:tokens:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:51:14.0376840Z 
+Build & Test	Run lint	2026-03-18T06:51:14.0377792Z > Task :feature:tokens:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:51:14.0379143Z Wrote HTML report to file:///home/runner/work/TranzoWallet/TranzoWallet/feature/tokens/build/reports/lint-results-debug.html
+Build & Test	Run lint	2026-03-18T06:51:14.0380219Z 
+Build & Test	Run lint	2026-03-18T06:51:14.0380552Z > Task :feature:tokens:lintDebug
+Build & Test	Run lint	2026-03-18T06:51:14.0381173Z > Task :feature:tokens:lint
+Build & Test	Run lint	2026-03-18T06:51:19.3376601Z > Task :feature:wallet:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:51:19.4395523Z 
+Build & Test	Run lint	2026-03-18T06:51:19.4396543Z > Task :feature:wallet:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:51:19.4398054Z Wrote HTML report to file:///home/runner/work/TranzoWallet/TranzoWallet/feature/wallet/build/reports/lint-results-debug.html
+Build & Test	Run lint	2026-03-18T06:51:19.4399154Z 
+Build & Test	Run lint	2026-03-18T06:51:19.4404973Z > Task :feature:wallet:lintDebug
+Build & Test	Run lint	2026-03-18T06:51:19.4405502Z > Task :feature:wallet:lint
+Build & Test	Run lint	2026-03-18T06:51:24.3376956Z > Task :app:lintAnalyzeDebug
+Build & Test	Run lint	2026-03-18T06:51:24.5376787Z 
+Build & Test	Run lint	2026-03-18T06:51:24.5377992Z > Task :app:lintReportDebug
+Build & Test	Run lint	2026-03-18T06:51:24.5387597Z Wrote HTML report to file:///home/runner/work/TranzoWallet/TranzoWallet/app/build/reports/lint-results-debug.html
+Build & Test	Run lint	2026-03-18T06:51:24.5388473Z 
+Build & Test	Run lint	2026-03-18T06:51:24.5388670Z > Task :app:lintDebug FAILED
+Build & Test	Run lint	2026-03-18T06:51:24.5389228Z Lint found 1 errors, 66 warnings. First failure:
+Build & Test	Run lint	2026-03-18T06:51:24.5389648Z 
+Build & Test	Run lint	2026-03-18T06:51:24.5391367Z /home/runner/work/TranzoWallet/TranzoWallet/app/src/main/AndroidManifest.xml:7: Error: Permission exists without corresponding hardware <uses-feature android:name="android.hardware.camera" required="false"> tag [PermissionImpliesUnsupportedChromeOsHardware]
+Build & Test	Run lint	2026-03-18T06:51:24.5394021Z     <uses-permission android:name="android.permission.CAMERA" />
+Build & Test	Run lint	2026-03-18T06:51:24.5394700Z      ~~~~~~~~~~~~~~~
+Build & Test	Run lint	2026-03-18T06:51:24.5394946Z 
+Build & Test	Run lint	2026-03-18T06:51:24.5395422Z    Explanation for issues of type "PermissionImpliesUnsupportedChromeOsHardware":
+Build & Test	Run lint	2026-03-18T06:51:24.5396480Z    The <uses-permission> element should not require a permission that implies
+Build & Test	Run lint	2026-03-18T06:51:24.5397455Z    an unsupported large screen hardware feature. Google Play assumes that
+Build & Test	Run lint	2026-03-18T06:51:24.5398412Z    certain hardware related permissions indicate that the underlying hardware
+Build & Test	Run lint	2026-03-18T06:51:24.5399397Z    features are required by default. To fix the issue, consider declaring the
+Build & Test	Run lint	2026-03-18T06:51:24.5400334Z    corresponding <uses-feature> element with required="false" attribute.
+Build & Test	Run lint	2026-03-18T06:51:24.5400892Z 
+Build & Test	Run lint	2026-03-18T06:51:24.5401318Z    https://developer.android.com/topic/arc/manifest.html#implied-features
+Build & Test	Run lint	2026-03-18T06:51:24.5401913Z 
+Build & Test	Run lint	2026-03-18T06:51:24.5401921Z 
+Build & Test	Run lint	2026-03-18T06:51:24.5402137Z The full lint text report is located at:
+Build & Test	Run lint	2026-03-18T06:51:24.5403586Z   /home/runner/work/TranzoWallet/TranzoWallet/app/build/intermediates/lint_intermediate_text_report/debug/lintReportDebug/lint-results-debug.txt
+Build & Test	Run lint	2026-03-18T06:51:24.6380020Z gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1773816547169.json
+Build & Test	Run lint	2026-03-18T06:51:24.6387657Z 
+Build & Test	Run lint	2026-03-18T06:51:24.6389410Z FAILURE: Build failed with an exception.
+Build & Test	Run lint	2026-03-18T06:51:24.6391381Z 
+Build & Test	Run lint	2026-03-18T06:51:24.6393686Z * What went wrong:
+Build & Test	Run lint	2026-03-18T06:51:24.6396693Z Execution failed for task ':app:lintDebug'.
+Build & Test	Run lint	2026-03-18T06:51:24.6399212Z > Lint found errors in the project; aborting build.
+Build & Test	Run lint	2026-03-18T06:51:24.6401368Z   
+Build & Test	Run lint	2026-03-18T06:51:24.6401778Z 707 actionable tasks: 707 executed
+Build & Test	Run lint	2026-03-18T06:51:24.6403103Z   Fix the issues identified by lint, or create a baseline to see only new errors.
+Build & Test	Run lint	2026-03-18T06:51:24.6404950Z   To create a baseline, run `gradlew updateLintBaseline` after adding the following to the module's build.gradle file:
+Build & Test	Run lint	2026-03-18T06:51:24.6406202Z   ```
+Build & Test	Run lint	2026-03-18T06:51:24.6410024Z   android {
+Build & Test	Run lint	2026-03-18T06:51:24.6410844Z       lint {
+Build & Test	Run lint	2026-03-18T06:51:24.6411593Z           baseline = file("lint-baseline.xml")
+Build & Test	Run lint	2026-03-18T06:51:24.6412384Z       }
+Build & Test	Run lint	2026-03-18T06:51:24.6424512Z   }
+Build & Test	Run lint	2026-03-18T06:51:24.6424860Z   ```
+Build & Test	Run lint	2026-03-18T06:51:24.6425517Z   For more details, see https://developer.android.com/studio/write/lint#snapshot
+Build & Test	Run lint	2026-03-18T06:51:24.6426307Z   
+Build & Test	Run lint	2026-03-18T06:51:24.6426737Z   Lint found 1 errors, 66 warnings. First failure:
+Build & Test	Run lint	2026-03-18T06:51:24.6427296Z   
+Build & Test	Run lint	2026-03-18T06:51:24.6429170Z   /home/runner/work/TranzoWallet/TranzoWallet/app/src/main/AndroidManifest.xml:7: Error: Permission exists without corresponding hardware <uses-feature android:name="android.hardware.camera" required="false"> tag [PermissionImpliesUnsupportedChromeOsHardware]
+Build & Test	Run lint	2026-03-18T06:51:24.6431532Z       <uses-permission android:name="android.permission.CAMERA" />
+Build & Test	Run lint	2026-03-18T06:51:24.6432201Z        ~~~~~~~~~~~~~~~
+Build & Test	Run lint	2026-03-18T06:51:24.6432595Z   
+Build & Test	Run lint	2026-03-18T06:51:24.6433464Z      Explanation for issues of type "PermissionImpliesUnsupportedChromeOsHardware":
+Build & Test	Run lint	2026-03-18T06:51:24.6434559Z      The <uses-permission> element should not require a permission that implies
+Build & Test	Run lint	2026-03-18T06:51:24.6435545Z      an unsupported large screen hardware feature. Google Play assumes that
+Build & Test	Run lint	2026-03-18T06:51:24.6436527Z      certain hardware related permissions indicate that the underlying hardware
+Build & Test	Run lint	2026-03-18T06:51:24.6437557Z      features are required by default. To fix the issue, consider declaring the
+Build & Test	Run lint	2026-03-18T06:51:24.6438525Z      corresponding <uses-feature> element with required="false" attribute.
+Build & Test	Run lint	2026-03-18T06:51:24.6439226Z   
+Build & Test	Run lint	2026-03-18T06:51:24.6439801Z      https://developer.android.com/topic/arc/manifest.html#implied-features
+Build & Test	Run lint	2026-03-18T06:51:24.6440511Z   
+Build & Test	Run lint	2026-03-18T06:51:24.6440820Z   
+Build & Test	Run lint	2026-03-18T06:51:24.6441186Z   The full lint text report is located at:
+Build & Test	Run lint	2026-03-18T06:51:24.6442432Z     /home/runner/work/TranzoWallet/TranzoWallet/app/build/intermediates/lint_intermediate_text_report/debug/lintReportDebug/lint-results-debug.txt
+Build & Test	Run lint	2026-03-18T06:51:24.6443450Z 
+Build & Test	Run lint	2026-03-18T06:51:24.6443557Z * Try:
+Build & Test	Run lint	2026-03-18T06:51:24.6443839Z > Run with --stacktrace option to get the stack trace.
+Build & Test	Run lint	2026-03-18T06:51:24.6444260Z > Run with --info or --debug option to get more log output.
+Build & Test	Run lint	2026-03-18T06:51:24.6444649Z > Run with --scan to get full insights.
+Build & Test	Run lint	2026-03-18T06:51:24.6444972Z > Get more help at https://help.gradle.org.
+Build & Test	Run lint	2026-03-18T06:51:24.6445192Z 
+Build & Test	Run lint	2026-03-18T06:51:24.6445289Z BUILD FAILED in 2m 24s
+Build & Test	Run lint	2026-03-18T06:51:25.0815677Z ##[error]Process completed with exit code 1.
+Build & Test	Upload lint results	n++2026-03-18T06:51:25.0889981Z ##[group]Run actions/upload-artifact@v4
+Build & Test	Upload lint results	2026-03-18T06:51:25.0890367Z with:
+Build & Test	Upload lint results	2026-03-18T06:51:25.0890704Z   name: lint-results
+Build & Test	Upload lint results	2026-03-18T06:51:25.0891103Z   path: **/build/reports/lint-results-*.html
+Build & Test	Upload lint results	2026-03-18T06:51:25.0891414Z   retention-days: 14
+Build & Test	Upload lint results	2026-03-18T06:51:25.0891756Z   if-no-files-found: warn
+Build & Test	Upload lint results	2026-03-18T06:51:25.0892089Z   compression-level: 6
+Build & Test	Upload lint results	2026-03-18T06:51:25.0892410Z   overwrite: false
+Build & Test	Upload lint results	2026-03-18T06:51:25.0892737Z   include-hidden-files: false
+Build & Test	Upload lint results	2026-03-18T06:51:25.0893150Z env:
+Build & Test	Upload lint results	2026-03-18T06:51:25.0893596Z   JAVA_VERSION: 17
+Build & Test	Upload lint results	2026-03-18T06:51:25.0893908Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Upload lint results	2026-03-18T06:51:25.0894290Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Upload lint results	2026-03-18T06:51:25.0895099Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Upload lint results	2026-03-18T06:51:25.0895843Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+Build & Test	Upload lint results	2026-03-18T06:51:25.0896258Z   GRADLE_USER_HOME: /home/runner/.gradle
+Build & Test	Upload lint results	2026-03-18T06:51:25.0896636Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+Build & Test	Upload lint results	2026-03-18T06:51:25.0897036Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+Build & Test	Upload lint results	2026-03-18T06:51:25.0897593Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+Build & Test	Upload lint results	2026-03-18T06:51:25.0898272Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+Build & Test	Upload lint results	2026-03-18T06:51:25.0898815Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+Build & Test	Upload lint results	2026-03-18T06:51:25.0899161Z ##[endgroup]
+Build & Test	Upload lint results	2026-03-18T06:51:26.5051779Z With the provided path, there will be 17 files uploaded
+Build & Test	Upload lint results	2026-03-18T06:51:26.5057704Z Artifact name is valid!
+Build & Test	Upload lint results	2026-03-18T06:51:26.5058646Z Root directory input is valid!
+Build & Test	Upload lint results	2026-03-18T06:51:26.5789542Z Beginning upload of artifact content to blob storage
+Build & Test	Upload lint results	2026-03-18T06:51:26.6797338Z Uploaded bytes 138057
+Build & Test	Upload lint results	2026-03-18T06:51:26.6976258Z Finished uploading artifact content to blob storage!
+Build & Test	Upload lint results	2026-03-18T06:51:26.6979340Z SHA256 digest of uploaded artifact zip is 9e426f6ade2bf3793b90f22ed8fd2ad9d6b9e1b19b96af12029b591f00d4840b
+Build & Test	Upload lint results	2026-03-18T06:51:26.6981059Z Finalizing artifact upload
+Build & Test	Upload lint results	2026-03-18T06:51:26.7877260Z Artifact lint-results.zip successfully finalized. Artifact ID 5980096821
+Build & Test	Upload lint results	2026-03-18T06:51:26.7878395Z Artifact lint-results has been successfully uploaded! Final size is 138057 bytes. Artifact ID is 5980096821
+Build & Test	Upload lint results	2026-03-18T06:51:26.7886451Z Artifact download URL: https://github.com/Pranav00x/TranzoWallet/actions/runs/23232641979/artifacts/5980096821
+Build & Test	Upload test results	n++2026-03-18T06:51:26.8039509Z ##[group]Run actions/upload-artifact@v4
+Build & Test	Upload test results	2026-03-18T06:51:26.8039878Z with:
+Build & Test	Upload test results	2026-03-18T06:51:26.8040102Z   name: unit-test-results
+Build & Test	Upload test results	2026-03-18T06:51:26.8040372Z   path: **/build/reports/tests/
+Build & Test	Upload test results	2026-03-18T06:51:26.8040651Z   retention-days: 14
+Build & Test	Upload test results	2026-03-18T06:51:26.8040897Z   if-no-files-found: warn
+Build & Test	Upload test results	2026-03-18T06:51:26.8041159Z   compression-level: 6
+Build & Test	Upload test results	2026-03-18T06:51:26.8041402Z   overwrite: false
+Build & Test	Upload test results	2026-03-18T06:51:26.8041643Z   include-hidden-files: false
+Build & Test	Upload test results	2026-03-18T06:51:26.8041903Z env:
+Build & Test	Upload test results	2026-03-18T06:51:26.8042097Z   JAVA_VERSION: 17
+Build & Test	Upload test results	2026-03-18T06:51:26.8042333Z   JAVA_DISTRIBUTION: temurin
+Build & Test	Upload test results	2026-03-18T06:51:26.8042718Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Upload test results	2026-03-18T06:51:26.8043454Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+Build & Test	Upload test results	2026-03-18T06:51:26.8043914Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+Build & Test	Upload test results	2026-03-18T06:51:26.8044246Z   GRADLE_USER_HOME: /home/runner/.gradle
+Build & Test	Upload test results	2026-03-18T06:51:26.8044564Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+Build & Test	Upload test results	2026-03-18T06:51:26.8044915Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+Build & Test	Upload test results	2026-03-18T06:51:26.8045388Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+Build & Test	Upload test results	2026-03-18T06:51:26.8045899Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+Build & Test	Upload test results	2026-03-18T06:51:26.8046240Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+Build & Test	Upload test results	2026-03-18T06:51:26.8046532Z ##[endgroup]
+Build & Test	Upload test results	2026-03-18T06:51:28.1355387Z ##[warning]No files were found with the provided path: **/build/reports/tests/. No artifacts will be uploaded.
+Build & Test	Post Setup Gradle	n++2026-03-18T06:51:28.1553959Z Post job cleanup.
+Build & Test	Post Setup Gradle	2026-03-18T06:51:28.4625912Z In post-action step
+Build & Test	Post Setup Gradle	2026-03-18T06:51:28.4637191Z ##[group]Stopping Gradle daemons
+Build & Test	Post Setup Gradle	2026-03-18T06:51:28.4638687Z Stopping Gradle daemons for /home/runner/.gradle/wrapper/dists/gradle-8.9-bin/90cnw93cvbtalezasaz0blq0a/gradle-8.9
+Build & Test	Post Setup Gradle	2026-03-18T06:51:28.4656448Z [command]/home/runner/.gradle/wrapper/dists/gradle-8.9-bin/90cnw93cvbtalezasaz0blq0a/gradle-8.9/bin/gradle --stop
+Build & Test	Post Setup Gradle	2026-03-18T06:51:29.1129767Z Stopping Daemon(s)
+Build & Test	Post Setup Gradle	2026-03-18T06:51:29.1130301Z 1 Daemon stopped
+Build & Test	Post Setup Gradle	2026-03-18T06:51:29.1260183Z ##[endgroup]
+Build & Test	Post Setup Gradle	2026-03-18T06:51:29.1274031Z Not performing cache-cleanup due to build failure
+Build & Test	Post Setup Gradle	2026-03-18T06:51:29.1276106Z ##[group]Caching Gradle state
+Build & Test	Post Setup Gradle	2026-03-18T06:51:30.7285011Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --files-from manifest.txt --use-compress-program zstdmt
+Build & Test	Post Setup Gradle	2026-03-18T06:51:32.4470239Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --files-from manifest.txt --use-compress-program zstdmt
+Build & Test	Post Setup Gradle	2026-03-18T06:51:33.5061593Z Sent 9692961 of 479455009 (2.0%), 9.2 MBs/sec
+Build & Test	Post Setup Gradle	2026-03-18T06:51:34.4997464Z Sent 479455009 of 479455009 (100.0%), 228.7 MBs/sec
+Build & Test	Post Setup Gradle	2026-03-18T06:51:34.7519919Z Saved cache entry with key gradle-dependencies-v1-dccca9ee6837a9fd4675682e7234053e from /home/runner/.gradle/caches/modules-*/files-*/*/*/*/* in 4996ms
+Build & Test	Post Setup Gradle	2026-03-18T06:51:36.5732907Z Sent 45179317 of 246505909 (18.3%), 43.0 MBs/sec
+Build & Test	Post Setup Gradle	2026-03-18T06:51:36.9880454Z Sent 246505909 of 246505909 (100.0%), 166.1 MBs/sec
+Build & Test	Post Setup Gradle	2026-03-18T06:51:37.1287487Z Saved cache entry with key gradle-transforms-v1-b89189362c2fbb289beaf18505263cdd from /home/runner/.gradle/caches/transforms-4/*/,/home/runner/.gradle/caches/*/transforms/*/ in 6161ms
+Build & Test	Post Setup Gradle	2026-03-18T06:51:38.2738369Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/TranzoWallet/TranzoWallet --files-from manifest.txt --use-compress-program zstdmt
+Build & Test	Post Setup Gradle	2026-03-18T06:51:38.6871090Z Sent 7793014 of 7793014 (100.0%), 45.9 MBs/sec
+Build & Test	Post Setup Gradle	2026-03-18T06:51:38.7743650Z Saved cache entry with key gradle-home-v1|Linux-X64|build[4757b9a07e36f0d7bcbca81beedd816f]-bf22a2509fa0ce977cbc30b102185d2825afd863 from /home/runner/.gradle/caches,/home/runner/.gradle/notifications,/home/runner/.gradle/.setup-gradle in 515ms
+Build & Test	Post Setup Gradle	2026-03-18T06:51:38.7746121Z ##[endgroup]
+Build & Test	Post Setup Gradle	2026-03-18T06:51:38.7751760Z Generating Job Summary
+Build & Test	Post Setup Gradle	2026-03-18T06:51:38.7772197Z Completed post-action step
+Build & Test	Post Set up JDK 17	n++2026-03-18T06:51:38.8045937Z Post job cleanup.
+Build & Test	Post Checkout repository	n++2026-03-18T06:51:38.9820835Z Post job cleanup.
+Build & Test	Post Checkout repository	2026-03-18T06:51:39.0840951Z [command]/usr/bin/git version
+Build & Test	Post Checkout repository	2026-03-18T06:51:39.0882781Z git version 2.53.0
+Build & Test	Post Checkout repository	2026-03-18T06:51:39.0927415Z Temporarily overriding HOME='/home/runner/work/_temp/3c9ab08b-5662-4793-a72e-3fb8ff2be7ca' before making global git config changes
+Build & Test	Post Checkout repository	2026-03-18T06:51:39.0929171Z Adding repository directory to the temporary git global config as a safe directory
+Build & Test	Post Checkout repository	2026-03-18T06:51:39.0944056Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/TranzoWallet/TranzoWallet
+Build & Test	Post Checkout repository	2026-03-18T06:51:39.0981756Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build & Test	Post Checkout repository	2026-03-18T06:51:39.1017848Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build & Test	Post Checkout repository	2026-03-18T06:51:39.1338845Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build & Test	Post Checkout repository	2026-03-18T06:51:39.1362378Z http.https://github.com/.extraheader
+Build & Test	Post Checkout repository	2026-03-18T06:51:39.1376317Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Build & Test	Post Checkout repository	2026-03-18T06:51:39.1410377Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build & Test	Post Checkout repository	2026-03-18T06:51:39.1739787Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build & Test	Post Checkout repository	2026-03-18T06:51:39.1780583Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build & Test	Complete job	n++2026-03-18T06:51:39.2182796Z Cleaning up orphan processes
+Build & Test	Complete job	2026-03-18T06:51:39.2471968Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-java@v4, actions/upload-artifact@v4, gradle/actions/setup-gradle@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
