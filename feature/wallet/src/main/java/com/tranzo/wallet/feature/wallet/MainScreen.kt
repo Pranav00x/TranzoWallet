@@ -1,6 +1,5 @@
 package com.tranzo.wallet.feature.wallet
 
-import androidx.compose.animation.AnimatedContentTransitionScope
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -13,15 +12,15 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountBalanceWallet
+import androidx.compose.material.icons.filled.CreditCard
+import androidx.compose.material.icons.filled.Explore
 import androidx.compose.material.icons.filled.History
-import androidx.compose.material.icons.filled.PhotoLibrary
 import androidx.compose.material.icons.filled.Settings
-import androidx.compose.material.icons.filled.Token
 import androidx.compose.material.icons.outlined.AccountBalanceWallet
+import androidx.compose.material.icons.outlined.CreditCard
+import androidx.compose.material.icons.outlined.Explore
 import androidx.compose.material.icons.outlined.History
-import androidx.compose.material.icons.outlined.PhotoLibrary
 import androidx.compose.material.icons.outlined.Settings
-import androidx.compose.material.icons.outlined.Token
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -50,8 +49,8 @@ private enum class BottomTab(
     val unselectedIcon: ImageVector
 ) {
     Wallet("tab_wallet", "Wallet", Icons.Filled.AccountBalanceWallet, Icons.Outlined.AccountBalanceWallet),
-    Tokens("tab_tokens", "Tokens", Icons.Filled.Token, Icons.Outlined.Token),
-    NFTs("tab_nfts", "NFTs", Icons.Filled.PhotoLibrary, Icons.Outlined.PhotoLibrary),
+    Browser("tab_browser", "Browser", Icons.Filled.Explore, Icons.Outlined.Explore),
+    Card("tab_card", "Card", Icons.Filled.CreditCard, Icons.Outlined.CreditCard),
     History("tab_history", "History", Icons.Filled.History, Icons.Outlined.History),
     Settings("tab_settings", "Settings", Icons.Filled.Settings, Icons.Outlined.Settings)
 }
@@ -65,6 +64,9 @@ fun MainScreen(navController: NavController) {
     Scaffold(
         containerColor = FrostDesignTokens.frostBackground,
         bottomBar = {
+            // Hide bottom bar when on the Browser tab (it has its own toolbar)
+            val isBrowserTab = currentDestination?.hierarchy?.any { it.route == BottomTab.Browser.route } == true
+
             NavigationBar(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -131,12 +133,12 @@ fun MainScreen(navController: NavController) {
                 )
             }
 
-            composable(BottomTab.Tokens.route) {
-                TokensPlaceholder()
+            composable(BottomTab.Browser.route) {
+                DAppBrowserScreen()
             }
 
-            composable(BottomTab.NFTs.route) {
-                NftsPlaceholder()
+            composable(BottomTab.Card.route) {
+                CardScreen()
             }
 
             composable(BottomTab.History.route) {
@@ -147,36 +149,6 @@ fun MainScreen(navController: NavController) {
                 SettingsPlaceholder()
             }
         }
-    }
-}
-
-@Composable
-private fun TokensPlaceholder() {
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(FrostDesignTokens.frostBackground),
-        contentAlignment = Alignment.Center,
-    ) {
-        Text(
-            text = "Tokens",
-            style = FrostDesignTokens.headline,
-        )
-    }
-}
-
-@Composable
-private fun NftsPlaceholder() {
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(FrostDesignTokens.frostBackground),
-        contentAlignment = Alignment.Center,
-    ) {
-        Text(
-            text = "NFTs",
-            style = FrostDesignTokens.headline,
-        )
     }
 }
 

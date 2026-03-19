@@ -45,7 +45,9 @@ dependencies {
     implementation(project(":domain:model"))
     implementation(project(":domain:usecase"))
     implementation(project(":data:repository"))
+    implementation(project(":data:network"))
     implementation(project(":core:keystore"))
+    implementation(project(":core:crypto"))
     implementation(project(":ui:frost-components"))
     implementation(project(":ui:theme"))
 
@@ -70,6 +72,10 @@ dependencies {
     implementation(libs.coroutines.core)
     implementation(libs.coroutines.android)
 
+    implementation(libs.web3j.core)
+    implementation(libs.gson)
+
     implementation(libs.zxing.core)
     implementation(libs.coil.compose)
 }
+
